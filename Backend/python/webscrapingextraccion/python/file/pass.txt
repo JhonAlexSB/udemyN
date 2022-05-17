@@ -1,0 +1,7 @@
+toor
+root
+contrasena
+password
+abcdef
+12345678
+qwerty

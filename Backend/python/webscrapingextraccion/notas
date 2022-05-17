@@ -252,16 +252,95 @@ python/19_listas.py
 python/20_listas_metodos.py
 
 <<<< Cap 32 "Diccionarios"
+* Los diccionarios son secuencias de datos que estan definidas entre {} y muestran una relacion de clave-valor
+* Metodos:
+  * diccionario[clave] -> acceder al valor
+  * diccionario[clave] = valor-> Asignar valor o ingresar nueva relacion
+  * diccionario.clear() -> limpia el diccionario
+  * diccionario.items() -> retorna (clave,valor)
+  * diccionario.keys() -> retorna claves
+  * diccionario.values() -> retorna valores
+  * Dato: puedes utilizar in para buscar una clave
+
+python/21_diccionarios.py
+
 <<<< Cap 33 "Tuplas"
+* Es un tipo de dato de lista inmutable, esta no puede ser editada de ningun modo. las tuplas se identifican con los parentesis
+
+Count(dato) -> cuenta la cantidad de veces que se repite un dato
+Index(dato) -> resive un elemento como argumento y devuelve su indice
+
+python/22_tupla.py
+
 <<<< Cap 34 "Manejo de Archivos"
+* Gracias al manejo de archivos logramos tener persistencia de datos al momento de ejecutar un proceso
+* Para abrir un fichero tendremos que utilizar el comando open(archivo,modo)
+  * Write   (w)
+  * Read    (r)
+  * Append  (a) 
+
+python/23_manejo_archivos.py
+
 <<<< Cap 35 "Leer Ficheros"
+* Iniciaremos un archivo en modo lectura
+* Para leer el documento tenemos que utilizar la funcion read() y alamacenarlo en una variable o imprimirlo
+
+python/24_lectura.py
+python/file/pass.txt
+python/file/users.txt
+
 <<<< Cap 36 "Escribir Ficheros"
+* Iniciaremos abriendo un archivo en modo escritura
+* Para escribir el documento tenemos que utilizar la funcion write()
+* Utilizando el modo escritura podemos crear archivos 
+
+python/25_escritura.py
+
 <<<< Cap 37 "Anadir"
+* Iniciaremos abriendo un archivo en modo escritura
+* Para escribir el documento tenemos que utilizar la funcion write()
+* Utilizando el modo append podemos crear archivos 
+
+python/26_append.py
+
 <<<< Cap 38 "Eliminar"
+* Utilizaremos el paquete os y llamar a la funcion remove
+  * from os import remove
+
+python/27_eliminar.py
+
 <<<< Cap 39 "Funciones"
+* Las funciones son listas de codigo agrupadas que realizan una funcion
+* Se usan con la paabra reservada 'def' seguido del nombre de la funcion
+* Nos permiten reutilizar codigo
+* Funcionan de manera recursiva tambien 'LLamar una funcion desde otra'
+* Al final del nombre de la funcion ponemos parentesis que pueden estar vacios o contener un/unos argumento
+
+python/28_funciones.py
+
 <<<< Cap 40 "Argumentos"
+* Los argumentos son valores o parametros necesarios para usar la funcion
+
+python/29_argumentos.py
+
 <<<< Cap 41 "Exepciones"
+* Los errores inexperados finalizan nuestros programas.
+* Los errores suelen describir claramente donde se encuentra el error
+
+python/30_errores.py
+
 <<<< Cap 42 "Try - Except - Finally"
+* Nos permite intentar ejecutar codigo 
+* la sintaxis es la siguiente
+
+  try:
+    print('hola')
+  except:
+    print('No pude saludar :/')
+  Finally
+    print('Hola nuevamente.. o por primera vez?')
+
+python/31_try_except_finally.py
 
 >>>> Seccion 5 "Web Scrapping"
 <<<< Cap 43 "Web Scrapping Offline"
