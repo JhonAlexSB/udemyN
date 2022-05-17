@@ -19,13 +19,11 @@ Este curso incluye:
 
 
 >>>> Seccion 1 "Introduccion"
-
 <<<< Cap 1 "Bienvenido a Numpi"
 <<<< Cap 2 "Bienvenido al curso"
 <<<< Cap 3 "Instalacion MySQL y Base de datos practica"
 
 >>>> Seccion 2 "SELECT,DISTINCT,ORDER BY"
-
 <<<< Cap 4 "Ejercicio practio #1"
 >> 'Selectores'
 select * from sakila.actor;
@@ -59,7 +57,6 @@ select * from customer order by first_name asc;
 <<<< Cap 9 "Respuestas Seccion 2"
 
 >>>> Seccion 3 "WHERE"
-
 <<<< Cap 10 "Ejercicio practio #6"
 
 select * from actor where first_name = 'DAN'
@@ -106,7 +103,6 @@ Filtra la información donde amount sea mayor a 0.99.
 
 
 >>>> Seccion 4 "AND,OR,NOT"
-
 <<<< Cap 16 "Ejercicio practio #11"
 
 Uso de and "Muestra las dos consultas solo si se encuentran todas dos"
@@ -154,7 +150,6 @@ select * from rental where not staff_id = 1 and customer_id > 250 AND inventory_
 <<<< Cap 21 "Respuestas Seccion 4"
 
 >>>> Seccion 5 "IN"
-
 <<<< Cap 22 "Ejercicio practio #16"
 
 select * from customer where first_name = 'MARY' OR first_name = 'PATRICIA';
@@ -192,7 +187,6 @@ select * from city where city in ('Chiayi', 'Dongying', 'Fukuyama', 'Kilis');
 <<<< Cap 27 "Respuestas Seccion 5"
 
 >>>> Seccion 6 "BETWEEN"
-
 <<<< Cap 28 "Ejercicio practio #21"
 
 select * from rental where (customer_id between 300 AND 350) AND (staff_id = 1);
@@ -236,7 +230,6 @@ select * from film where (rental_rate between 0.99 AND 2.99) AND length <= 50 AN
 <<<< Cap 33 "Respuestas Seccion 6"
 
 >>>> Seccion 7 "LIKE"
-
 <<<< Cap 34 "Ejercicio practio #26"
 
 select * from actor where first_name like 'A%';
@@ -272,7 +265,6 @@ select * from film where release_year = 2006 AND title like 'ALI%';
 <<<< Cap 39 "Respuestas Seccion 7"
 
 >>>> Seccion 8 "INNER JOI,LEFT JOIN,RIGHT JOIN"
-
 <<<< Cap 40 "Ejercicio practio #31"
 
 
@@ -337,21 +329,34 @@ left join sakila.actor a on (c.last_name = a.last_name)
 <<<< Cap 48 "Respuestas Seccion 8"
 
 >>>> Seccion 9 "COUNT,AVG,SUM,MAX,MIN"
-
 <<<< Cap 49 "Ejercicio practio #39"
-
+> Funcion sumar
+select * from sakila.payment;
+select sum(amount) from sakila.payment;
 
 <<<< Cap 50 "Ejercicio practio #40"
-
+> Suma entre columnas
+select * from sakila.inventory;
+select inventory_id + film_id + store_id
+from inventory;
 
 <<<< Cap 51 "Ejercicio practio #41"
-
+> Retorna el numero de registros
+select * from sakila.actor;
+select count(*) from sakila.actor;
+select count(last_name) from sakila.actor;
 
 <<<< Cap 52 "Ejercicio practio #42"
-
+> Revisar el promedio
+select * from sakila.payment;
+select avg(amount) from sakila.payment;
+select avg(rental_duration) from sakila.film;
 
 <<<< Cap 53 "Ejercicio practio #43"
-
+> Maximos y Minimos
+select * from sakila.film;
+select max(length) from sakila.film;
+select min(length) from sakila.film;
 
 <<<< Cap 54 "Ejercicio practio #44"
 
@@ -362,41 +367,97 @@ left join sakila.actor a on (c.last_name = a.last_name)
 <<<< Cap 56 "Respuestas Seccion 9"
 
 >>>> Seccion 10 "GROUP BY"
-
 <<<< Cap 57 "Ejercicio practio #46"
+> Selecciona datos sin repetir
+select last_name from sakila.actor
+group by last_name;
 
+> Selecciona datos sin repetir y cuenta las coincidencias
+select last_name, count(*) from sakila.actor
+group by last_name;
 
 <<<< Cap 58 "Ejercicio practio #47"
+select * from sakila.payment;
+select * from sakila.customer;
 
+select * from sakila.payment p inner join sakila.customer c
+on (c.customer_id=p.customer_id);
+
+select 
+c.customer_id,
+c.first_name,
+c.last_name,
+sum(p.amount)
+from sakila.payment p inner join sakila.customer c
+on (c.customer_id=p.customer_id)
+group by 1,2,3
+
+select 
+c.customer_id,
+c.first_name,
+c.last_name,
+sum(p.amount)
+from sakila.payment p inner join sakila.customer c
+on (c.customer_id=p.customer_id)
+group by c.customer_id, c.first_name, c.last_name;
 
 <<<< Cap 59 "Ejercicio practio #48"
-
 
 <<<< Cap 60 "Respuestas Seccion 10"
 
 >>>> Seccion 11 "HAVING"
-
 <<<< Cap 61 "Ejercicio practio #49"
+select * from sakila.actor;
 
+> Nos muestra cuantas veces se repite el apellido
+select last_name, count(*) from sakila.actor
+group by 1;
+
+> Esta condicion marcara error
+select last_name, count(*) from sakila.actor
+where count(*) > 3
+group by 1;
+
+> Muestra solo los repetidos mas de tres veces
+select last_name, count(*) from sakila.actor
+group by 1
+having count(*) > 3;
 
 <<<< Cap 62 "Ejercicio practio #50"
+select * from payment;
+ 
+select * from payment p
+inner join sakila.customer c on (p.customer_id=c.customer_id);
 
+select 
+c.customer_id,
+c.last_name,
+c.first_name,
+sum(p.amount)
+from payment p
+inner join sakila.customer c on (p.customer_id=c.customer_id)
+group by 1,2,3;
+
+> Aplicamos un filtro
+select 
+c.customer_id,
+c.last_name,
+c.first_name,
+sum(p.amount)
+from payment p
+inner join sakila.customer c on (p.customer_id=c.customer_id)
+group by 1,2,3
+having sum(p.amount) < 60
+order by sum(p.amount) desc;
 
 <<<< Cap 63 "Ejercicio practio #51"
-
 
 <<<< Cap 64 "Respuestas Seccion 11"
 
 >>>> Seccion 12 "Ejercicios complementarios"
-
 <<<< Cap 65 "Lista de ejercicios"
-
 
 <<<< Cap 66 "Respuestas a ejercicios complementarios"
 
-
 >>>> Seccion 13 "Terminaste"
-
 <<<< Cap 67 "Nos evemos en clase"
-
-
