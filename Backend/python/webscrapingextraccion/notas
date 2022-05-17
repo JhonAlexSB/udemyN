@@ -180,14 +180,77 @@ Menor o igual que <=
 python/9_operadores_comparacion.py
 
 <<<< Cap 23 "Operadores Logicos"
+* AND retorna verdadero si todas las condiciones lo son
+* OR retorna verdadero si ay por lo menos una verdadera
+* NOT retorna lo condicion resultante contraria
+
+Se entiende facilmente con la "tabla de la verdad"
+
+python/10_operadores_logicos.py
+
 <<<< Cap 24 "Entrada de datos"
+* Se usa para interacion con el usuario
+* Para realizar la peticion de un dato usaremos <input>
+
+python/11_io.py
+
 <<<< Cap 25 "If"
+* if - else se utiliza para comparar una o mas condiciones
+* se puede omitir el else
+
+python/12_if.py
+python/13_ifvarios.py
+
 <<<< Cap 26 "Elif"
+* elif ayuda a poner mas condiciones a nuestro if
+
+python/14_elif.py
+
 <<<< Cap 27 "While"
+* Nos permite ejecutar un bloque de codigo multiples veces siempre que la condicion sea verdadera
+
+python/15_while.py
+
 <<<< Cap 28 "For"
+* Nos permite ejecutar un bloque de codigo multiples veces siempre que la condicion sea verdadera
+* Nos permite realizar iteraciones sobre items de una secuencia como listas o cadenas de texto
+
+* pass no omite la iteracion como un continue
+
+python/16_for.py
+
 <<<< Cap 29 "Range"
+* Iteraciones mediante rangos
+range(0,10)
+
+python/17_range.py
+
 <<<< Cap 30 "Break"
+* Representa una ruptura del bucle
+* Tambien tenemos una sentencia continue pero es muy poco usada
+
+python/18_break.py
+
 <<<< Cap 31 "Listas"
+* Las listas son sencuencias de datos que estan definidas entre [] y van separadas por comas
+* Metodos:
+  * len(lista) -> Tamano de la lista
+  * lista[0] -> Obtener el valor de una posicion definida
+  * lista.append(valor) -> Agrega valores a la lista
+  * lista.count(valor) -> Muestra cantidad de veces que se encuentra el valor
+  * lista.insert(posicion,valor) -> Inserta un elemento en una posicion
+  * lista.pop() -> devuelve El ultimo valor de una lista
+  * lista.remove(valor) -> Elimina la primera aparicion de un valor
+  * lista.index(dato) -> Devuelve la posicion
+  * lista.reverse() -> Invierte el orden de la lista
+  * lista.sort() -> Ordena los elementos de una lista
+
+variable = [1,2,3,4]
+variable2 = ["hola",2,2.0]
+
+python/19_listas.py
+python/20_listas_metodos.py
+
 <<<< Cap 32 "Diccionarios"
 <<<< Cap 33 "Tuplas"
 <<<< Cap 34 "Manejo de Archivos"
