@@ -26,99 +26,324 @@ Este curso incluye:
 >>>> Seccion 2 "SELECT,DISTINCT,ORDER BY"
 
 <<<< Cap 4 "Ejercicio practio #1"
+
+
 <<<< Cap 5 "Ejercicio practio #2"
+
+
 <<<< Cap 6 "Ejercicio practio #3"
+
+
 <<<< Cap 7 "Ejercicio practio #4"
+
+
 <<<< Cap 8 "Ejercicio practio #5"
+
+
 <<<< Cap 9 "Respuestas Seccion 2"
 
 >>>> Seccion 3 "WHERE"
 
 <<<< Cap 10 "Ejercicio practio #6"
+
+select * from actor where first_name = 'DAN'
+
+select * from city where city = 'London';
+select * from city where country_id = 102;
+
 <<<< Cap 11 "Ejercicio practio #7"
+
+select * from inventory;
+select * from inventory where film_id > 50;
+select * from payment where amount < 3;
+select distinct amount from payment where amount < 3;
+
 <<<< Cap 12 "Ejercicio practio #8"
+
+select * from staff_list;
+select * from staff_list where SID <> 2;
+
 <<<< Cap 13 "Ejercicio practio #9"
+
+Has terminado la Sección 3 WHERE. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta description, release_year de la tabla film de la base de datos sakila.
+
+R
+select description, release_year from film 
+
+Filtra la información donde title sea IMPACT ALADDIN
+
+R
+select * from film where title = 'IMPACT ALADDIN';
+
 <<<< Cap 14 "Ejercicio practio #10"
+
+Has terminado la Sección 3 WHERE. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Filtra la información donde amount sea mayor a 0.99.
+
 <<<< Cap 15 "Respuesta Seccion 3"
+
+
 
 >>>> Seccion 4 "AND,OR,NOT"
 
 <<<< Cap 16 "Ejercicio practio #11"
+
+Uso de and "Muestra las dos consultas solo si se encuentran todas dos"
+
+select * from country where country = 'Algeria' and country_id = 12;
+
+select * from country where country = 'Algeria' and country_id = 2;
+
 <<<< Cap 17 "Ejercicio practio #12"
+
+Uso de or "Muestra las dos consultas"
+
+select * from country where country = 'Algeria' or country_id = 12;
+
+select * from language;
+
+select * from language where language_id = 1 or name = 'German';
+
 <<<< Cap 18 "Ejercicio practio #13"
+
+Uso de not "Muestra todos menos German"
+select * from language 
+select * from language where not name = 'German'
+
 <<<< Cap 19 "Ejercicio practio #14"
+
+Has terminado la Sección 4 AND, OR, NOT. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Filtra la información donde customer_id sea igual a 36, amount sea mayor a 0.99 y staff_id sea igual a 1.
+
+select * from payment where customer_id  = 36 and amount > 0.99 and staff_id = 1;
+
 <<<< Cap 20 "Ejercicio practio #15"
+
+Has terminado la Sección 4 AND, OR, NOT. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla rental de la base de datos sakila.
+
+Filtra la información donde staff_id no sea 1, customer_id sea mayor a 250 y inventory_id sea menor de 100.
+
+select * from rental where not staff_id = 1 and customer_id > 250 AND inventory_id < 100;
+
 <<<< Cap 21 "Respuestas Seccion 4"
 
 >>>> Seccion 5 "IN"
 
 <<<< Cap 22 "Ejercicio practio #16"
+
+select * from customer where first_name = 'MARY' OR first_name = 'PATRICIA';
+
+select * from customer where first_name in ('MARY', 'PATRICIA');
+
 <<<< Cap 23 "Ejercicio practio #17"
+
+select * from film where special_features in ('Trailers', 'Trailers, Deleted Escenes') and rating in ('G','NC-17') AND length > 100;
+
 <<<< Cap 24 "Ejercicio practio #18"
+
+select * from category where name not in ('Action','Animation','Children');
+
 <<<< Cap 25 "Ejercicio practio #19"
+
+Has terminado la Sección 5 IN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film_text de la base de datos sakila.
+
+Filtra la información donde title  sea ZORRO ARK, VIRGIN DAISY, UNITED PILOT
+
+select * from film_text where title in ('ZORRO ARK', 'VIRGIN DAISY', 'UNITED PILOT');
+
 <<<< Cap 26 "Ejercicio practio #20"
+
+Has terminado la Sección 5 IN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla city de la base de datos sakila.
+
+Filtra la información donde city sea Chiayi, Dongying, Fukuyama y Kilis.
+
+select * from city where city in ('Chiayi', 'Dongying', 'Fukuyama', 'Kilis');
+
 <<<< Cap 27 "Respuestas Seccion 5"
 
 >>>> Seccion 6 "BETWEEN"
 
 <<<< Cap 28 "Ejercicio practio #21"
+
+select * from rental where (customer_id between 300 AND 350) AND (staff_id = 1);
+
 <<<< Cap 29 "Ejercicio practio #22"
+
+select * from payment where amount between 3 AND 5;
+
+select * from payment where amount not between 3 AND 5;
+
 <<<< Cap 30 "Ejercicio practio #23"
+
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Filtra la información donde amount esté entre 2.99 y 4.99,  staff_id sea igual a 2 y customer_id sea 1 y 2.
+
+select * from payment where (amount between 2.99 AND 4.99) AND (staff_id = 2) AND (customer_id in(1, 2));
+
 <<<< Cap 31 "Ejercicio practio #24"
+
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla address de la base de datos sakila.
+
+Filtra la información donde city_id esté entre 300 y 350,  
+
+select * from address where city_id between 300 AND 350;
+
 <<<< Cap 32 "Ejercicio practio #25"
+
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film de la base de datos sakila.
+
+Filtra la información donde rental_rate esté entre 0.99 y 2.99, length sea menor igual de 50  y replacement_cost sea menor de 20.
+
+select * from film where (rental_rate between 0.99 AND 2.99) AND length <= 50 AND replacement_cost < 20;
+
 <<<< Cap 33 "Respuestas Seccion 6"
 
 >>>> Seccion 7 "LIKE"
 
 <<<< Cap 34 "Ejercicio practio #26"
+
+select * from actor where first_name like 'A%';
+
+select * from actor where first_name like 'A%' AND last_name like 'B%';
+
 <<<< Cap 35 "Ejercicio practio #27"
+
+select * from actor where first_name like '%A';
+
+select * from actor where first_name like '%A' AND last_name like '%N';
+
 <<<< Cap 36 "Ejercicio practio #28"
+
+select * from actor where first_name like '%NE%';
+
+select * from actor where first_name like '%NE%' AND last_name like '%RO%';
+
 <<<< Cap 37 "Ejercicio practio #29"
+
+select * from actor where first_name like 'C%N';
+
 <<<< Cap 38 "Ejercicio practio #30"
+
+Has terminado la Sección 7 LIKE. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film de la base de datos sakila.
+
+Filtra la información donde release_year sea igual a 2006  y title empiece con ALI..
+
+select * from film where release_year = 2006 AND title like 'ALI%';
+
 <<<< Cap 39 "Respuestas Seccion 7"
 
 >>>> Seccion 8 "INNER JOI,LEFT JOIN,RIGHT JOIN"
 
 <<<< Cap 40 "Ejercicio practio #31"
+
+
 <<<< Cap 41 "Ejercicio practio #32"
+
+
 <<<< Cap 42 "Ejercicio practio #33"
+
+
 <<<< Cap 43 "Ejercicio practio #34"
+
+
 <<<< Cap 44 "Ejercicio practio #35"
+
+
 <<<< Cap 45 "Ejercicio practio #36"
+
+
 <<<< Cap 46 "Ejercicio practio #37"
+
+
 <<<< Cap 47 "Ejercicio practio #38"
+
+
 <<<< Cap 48 "Respuestas Seccion 8"
 
 >>>> Seccion 9 "COUNT,AVG,SUM,MAX,MIN"
 
 <<<< Cap 49 "Ejercicio practio #39"
+
+
 <<<< Cap 50 "Ejercicio practio #40"
+
+
 <<<< Cap 51 "Ejercicio practio #41"
+
+
 <<<< Cap 52 "Ejercicio practio #42"
+
+
 <<<< Cap 53 "Ejercicio practio #43"
+
+
 <<<< Cap 54 "Ejercicio practio #44"
+
+
 <<<< Cap 55 "Ejercicio practio #45"
+
+
 <<<< Cap 56 "Respuestas Seccion 9"
 
 >>>> Seccion 10 "GROUP BY"
 
 <<<< Cap 57 "Ejercicio practio #46"
+
+
 <<<< Cap 58 "Ejercicio practio #47"
+
+
 <<<< Cap 59 "Ejercicio practio #48"
+
+
 <<<< Cap 60 "Respuestas Seccion 10"
 
 >>>> Seccion 11 "HAVING"
 
 <<<< Cap 61 "Ejercicio practio #49"
+
+
 <<<< Cap 62 "Ejercicio practio #50"
+
+
 <<<< Cap 63 "Ejercicio practio #51"
+
+
 <<<< Cap 64 "Respuestas Seccion 11"
 
 >>>> Seccion 12 "Ejercicios complementarios"
 
 <<<< Cap 65 "Lista de ejercicios"
+
+
 <<<< Cap 66 "Respuestas a ejercicios complementarios"
+
 
 >>>> Seccion 13 "Terminaste"
 
 <<<< Cap 67 "Nos evemos en clase"
+
+
