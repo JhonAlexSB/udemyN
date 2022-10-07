@@ -1,0 +1,416 @@
+Curso:
+
+Instructor:
+
+Este curso incluye:
+
+>>>> Seccion
+<<<< Capitulo
+.... Recursos
+---- Enlaces
+
+
+>>>> Seccion 1 "Introduccion"
+<<<< Cap 1 "Bienvenido a Numpi"
+<<<< Cap 2 "Bienvenido al curso"
+<<<< Cap 3 "?Que es una base de datos?"
+se usa DBMS
+<<<< Cap 4 "SQL y MySQL"
+SQL
+  LDD . Lenguaje de Definicion de Datos
+  LMD . Lenguaje de Mnipulacion de Datos
+  LCD . Lenguaje de Control de Datos
+
+MySQL
+  RDBMS
+
+<<<< Cap 5 "Descarga"
+  escribir en google : mysql download
+
+<<<< Cap 6 "Instalacion"
+  Seleccionar "Full" opcion
+  Siguiente y sguiente en el archivo descargado
+
+<<<< Cap 7 "Mysql Workbench"
+<<<< Cap 8 "Leer base de datos Sakila"
+  show databases;
+  use sakila;
+  show tables;
+  select * from city;
+
+>>>> Seccion 2 "Lenguaje de definicion de datos"
+<<<< Cap 9 "Introduccion"
+<<<< Cap 10 "Tipos de datos"
+Cualitativos y Cuantitativos
+
+* Numericos
+BIT (size)
+TINYINT (size)
+BOOL
+BOOLEAN
+SMALLINT(size)
+
+* Hilos de caracere
+CHAR (size)
+VARCHAR (size)
+BINARY (size)
+
+* Fecha y tiempo
+DATE
+DATETIME(fsp)
+TIMESTAMP(fsp)
+
+<<<< Cap 11 "?Que es una Primary Key?"
+Identificador unico
+Todas las tablas tienen una
+
+<<<< Cap 12 "?Que es una Foreing Key?"
+Establece un vinculo con una llave primaria
+
+<<<< Cap 13 "Agregar y quitar columnas"
+# Crear una tabla a partir de otra
+CREATE TABLE koy SELECT city_id, phone, district FROM address;
+
+# Borrar columna
+ALTER TABLE koy
+DROP COLUMN district;
+
+# Agregar columna
+ALTER TABLE koy
+ADD COLUMN nuevo_distrito varchar(20);
+
+<<<< Cap 14 "Eliminar tablas"
+DROP TABLE koy;
+
+<<<< Cap 15 "Truncar tablas"
+# Se usar para eliminar los datos de las tablas
+# Se crea otra copia de address en la tabla koy
+CREATE TABLE koy SELECT city_id, phone, district FROM address;
+
+SELECT * FROM koy;
+TRUNCATE TABLE koy;
+SELECT * FROM koy;
+
+>>>> Seccion 3 "Alter table"
+<<<< Cap 16 "Introduccion"
+<<<< Cap 17 "Agregar y quitar Primary Keys"
+# Crear y seleccionar base de datos grupos
+
+CREATE DATABASE grupos;
+USE grupos;
+
+# Se crea una tabla
+CREATE TABLE zonas (
+  id INT NOT NULL,
+  dir_cod INT NOT NULL,
+  dir VARCHAR(20),
+  nombre VARCHAR(20)
+);
+
+# Se describe la tabla pero no tiene llave primaria
+DESC zonas;
+
+# Se crea llave primaria
+ALTER TABLE zonas ADD PRIMARY KEY (id);
+
+# Se crea otra tabla con llave primaria
+CREATE TABLE grupo_1 (
+  id INT NOT NULL,
+  nombre VARCHAR(20),
+  dir_cod INT NOT NULL,
+  PRIMARY KEY (id)
+);
+
+# Borrar llave primaria
+
+ALTER TABLE zonas DROP PRIMARY KEY;
+DESC zonas;
+
+<<<< Cap 18 "Agregar y quitar Foreing Keys"
+# Pude que de error si se sigue al pie de la letra los comandos se borro la
+# llave primaria de zonas y no se agrego otra vez
+
+#  La llave foranea aparece en la desc como MUL
+
+ALTER TABLE grupo_1
+ADD CONSTRAINT fk_zonasid
+FOREIGN KEY (dir_cod) REFERENCES zonas(id);
+
+CREATE TABLE grupo_2 (
+  id INT NOT NULL,
+  nombre VARCHAR(20),
+  dir_cod INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (dir_cod) REFERENCES zonas(id)
+);
+
+DESC grupo_2;
+
+# Borrar llave foranea
+ALTER TABLE grupo_1 
+DROP FOREIGN KEY fk_zonasid;
+
+(Error) No borra la llave foranea
+ 
+<<<< Cap 19 "Agregar Unique Constraint"
+# UNIQUE es para que nunca se repitan los valores en esa columna
+
+DESC grupo_1;
+
+#  La el constraint en la desc es como UNI
+ALTER TABLE grupo_1
+ADD CONSTRAINT u_nombre UNIQUE (nombre);
+
+CREATE TABLE grupo_3 (
+  id ID NOT NULL,
+  dir_id INT NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE (dir_id)
+);
+
+ALTER TABLE grupo_1
+DROP INDEX u_nombre;
+
+<<<< Cap 20 "Cambiar el nombre de una columna"
+DESC grupo_1;
+SELECT * FROM grupo_1;
+
+# Cambiar nombre
+ALTER TABLE grupo_1 CHANGE nombre apellido VARCHAR(8);
+
+<<<< Cap 21 "Cambiar el 'Data Type' de una columna"
+DESC grupo_2;
+
+# Cambiar tipo de dato
+ALTER TABLE grupo_2 MODIFY nombre char(12);
+
+<<<< Cap 22 "Ejercicio"
+Parte 1:
+  Crear tres tablas definidas con la siguiente estructura:
+    Mascotas.
+      Campos: ID,NOMBRE,ID_DUENO,SERVICIO
+    personas.
+      Campos: ID,NOMBRE,APELLIDO,COD_ZIP,TLF,EMAIL
+    DIRECCIONES.
+      Campos: ZIP,NOMBRE_ZONA,RUTA
+
+Parte 1:
+
+CREATE DATABASE vet;
+USE vet;
+
+CREATE TABLE mascotas (
+  id INT NOT NULL,
+  nombre VARCHAR (20),
+  id_dueno INT NOT NULL,
+  servicio VARCHAR (20)
+);
+
+CREATE TABLE personas (
+  id INT NOT NULL,
+  nombre VARCHAR (20),
+  apellido VARCHAR (20),
+  codigo_zip VARCHAR (20),
+  tlf VARCHAR (20)
+);
+
+CREATE TABLE direcciones (
+  zip VARCHAR (20),
+  nombre_zona VARCHAR (20),
+  ruta VARCHAR (20)
+);
+
+Parte 2:
+
+  al campo ZIP en la tabla Direcciones
+  * Agrega una UNIQUE CONSTRAINT a la columna EMAIL de la tabla Personas
+  * Cambia el nombre a la columna NOMBRE en la tabla Mascotas por PRIMER_NOMBRE
+  * Cambia el tipo de dato a la columna RUTA en la tabla Direcciones por CHAR(12)
+
+  * Agregar una PRIMARY KEY al campo ID en las tablas Mascotas y Personas.
+ALTER TABLE personas ADD PRIMARY KEY (id);
+ALTER TABLE mascotas ADD PRIMARY KEY (id);
+
+  * Agrega una FOREIGN KEY  al campo ID_DUENO en la tabla Mascotas que referencie
+  al campo ID en la tabla Personas.
+ALTER TABLE mascotas
+ADD CONSTRAINT fk_iddueno_personasid
+FOREIGN KEY (id_dueno) REFERENCES personas(id);
+
+  * Agrega una FOREIGN KEY al campo ZIP_COD en la tabla Personas que referencie
+  al campo ZIP en la tabla Direcciones
+ALTER TABLE personas
+ADD CONSTRAINT fk_zipcode_zip
+FOREIGN KEY (codigo_zip) REFERENCES direcciones(zip);
+
+  * Agrega una UNIQUE CONSTRAINT a la columna EMAIL de la tabla Personas
+  * Cambia el nombre a la columna NOMBRE en la tabla Mascotas por PRIMER_NOMBRE
+
+  * Cambia el tipo de dato a la columna RUTA en la tabla Direcciones por CHAR(12)
+ALTER TABLE direcciones CHANGE rutas CHAR(8);
+
+Parte 2:
+  * Agregar una PRIMARY KEY al campo ID en las tablas Mascotas y Personas.
+  * Agrega una FOREIGN KEY  al campo ID_DUENO en la tabla Mascotas que referencie
+  al campo ID en la tabla Personas.
+  * Agrega una FOREIGN KEY al campo ZIP_COD en la tabla Personas que referencie
+  al campo ZIP en la tabla Direcciones
+  * Agrega una UNIQUE CONSTRAINT a la columna EMAIL de la tabla Personas
+  * Cambia el nombre a la columna NOMBRE en la tabla Mascotas por PRIMER_NOMBRE
+  * Cambia el tipo de dato a la columna RUTA en la tabla Direcciones por CHAR(12)
+
+
+
+<<<< Cap 23 "Solucion al ejercicio"
+
+# EJERCICIO 1.1
+
+  CREATE DATABASE vet;
+  USE vet;
+
+# A) CREAR TABLA MASCOTAS, CAMPOS: ID, NOMBRE, SERVICIO
+
+  CREATE TABLE MASCOTAS (
+    ID INT NOT NULL,
+    NOMBRE VARCHAR (8),
+    ID_DUENO INT NOT NULL,
+    SERVICIO VARCHAR (12)
+  );
+
+# B) CREAR TABLA PERSONAS, CAMPOS: ID, NOMBRE, APELLIDO ID_DUENO, COD_ZIP, TLF
+
+  CREATE TABLE PERSONAS (
+    ID INT NOT NULL,
+    NOMBRE VARCHAR (8),
+    APELLIDO VARCHAR (12),
+    ID_DUENO INT NOT NULL,
+    COD_ZIP INT NOT NULL,
+    TLF INT
+  );
+
+
+# C) CREAR TABLA DIRECCIONES, CAMPOS: ZIP, NOMBRE_ZONA, RUTA 
+
+  CREATE TABLE DIRECCIONES (
+    ZIP INT NOT NULL,
+    NOMBRE_ZONA VARCHAR (8),
+    RUTA VARCHAR (50)
+  );
+
+  DESC PERSONAS;
+  DESC MASCOTAS;
+  DESC DIRECCIONES;
+
+# EJERCICIO 1.2
+
+# A) Agregar PK al campo ID en vet.MASCOTAS
+
+  DESC MASCOTAS;
+
+  ALTER TABLE vet.MASCOTAS
+  ADD PRIMARY KEY (ID);
+
+  DESC MASCOTAS;
+
+# B) Agregar PK al campo ID en vet.PERSONAS
+
+  DESC PERSONAS;
+
+  ALTER TABLE vet.PERSONAS
+  ADD PRIMARY KEY (ID);
+
+  DESC PERSONAS;
+
+# C) Agregar PK al campo ZIP EN vet.DIRECCIONES
+
+  DESC DIRECCIONES;
+
+  ALTER TABLE vet.DIRECCIONES
+  ADD PRIMARY KEY (ZIP);
+
+  DESC DIRECCIONES;
+
+# D) Agreagar FK al campo ID_DUENO en vet.MASCOTAS -> ID en vet.PERSONAS
+
+  DESCRIBE vet.MASCOTAS;
+
+  ALTER TABLE vet.MASCOTAS
+  ADD CONSTRAINT FK_DUENOS_ID
+  FOREIGN KEY (ID_DUENO) REFERENCES vet.PERSONAS(ID);
+
+  DESCRIBE vet.MASCOTAS;
+
+
+# D) Agreagar FK al campo zipcode en vet.PERSONAS -> zip en vet.DIRECCIONES
+
+  DESCRIBE vet.PERSONAS;
+
+  ALTER TABLE vet.PERSONAS
+  ADD CONSTRAINT FK_ZIP_DIR
+  FOREIGN KEY (COD_ZIP) REFERENCES vet.DIRECCIONES(ZIP);
+
+  DESCRIBE vet.PERSONAS;
+
+# E) Agregar columna a email en vet.PERSONAS
+
+  DESCRIBE vet.PERSONAS;
+
+  ALTER TABLE vet.PERSONAS
+  ADD COLUMN EMAIL VARCHAR(50);
+
+  DESCRIBE vet.PERSONAS;
+
+# F) Agregar UNIQUE CONSTRAINT a Email en vet.PERSONAS
+
+  DESC vet.PERSONAS;
+
+
+  ALTER TABLE PERSONAS
+  ADD CONSTRAINT U_EMAIL
+  UNIQUE (EMAIL);
+
+
+# G) Cambiar el nombre al campo NOMBRE en vet.MASCOTAS -> PRIMER_NOMBRE
+
+  DESC MASCOTAS;
+
+  ALTER TABLE MASCOTAS
+  RENAME COLUMN NOMBRE TO PRIMER_NOMBRE;
+
+# H) Cambia el tipo de campo de la tabla RUTA en vet.DIRECCIONES -> CHAR(12)
+
+  DESC DIRECCIONES;
+
+  ALTER TABLE DIRECCIONES
+  MODIFY RUTA CHAR(12);
+
+
+>>>> Seccion 4 "Lenguaje de manipulacion de los datos"
+<<<< Cap 24 "Introduccion"
+<<<< Cap 25 "Insertar datos en una tabla"
+<<<< Cap 26 "Actualizar datos en una tabla"
+<<<< Cap 27 "Borrar datos de una tabla"
+<<<< Cap 28 "Completando nuestra base de datos S.."
+>>>> Seccion 5 "Diseno de una base de datos"
+<<<< Cap 29 "Introduccion"
+<<<< Cap 30 "Normalizacion de bases de datos"
+<<<< Cap 31 "1st Normal Form (1NF)"
+<<<< Cap 32 "2nd Normal Form (2Nf)"
+<<<< Cap 33 "3rd Normal Form (3NF)"
+<<<< Cap 34 "Relaciones"
+<<<< Cap 35 "Relacion uno a uno (one to one)"
+<<<< Cap 36 "Relacion uno a muchos (many to one)..."
+<<<< Cap 37 "Relacion muchos a muchos (many to ...)"
+<<<< Cap 38 "Constraint"
+<<<< Cap 39 "Constraint (Ejemplo)"
+>>>> Seccion 6 "Caso Practico:Base de datos de un cine"
+<<<< Cap 40 "Introduccion"
+<<<< Cap 41 "Esquema de la base de datos"
+<<<< Cap 42 "Creacion de la tabla de Peliculas"
+<<<< Cap 43 "Creacion de la tabla de Clientes"
+<<<< Cap 44 "Creacion de la tabla de Salas"
+<<<< Cap 45 "Creacion de la tabla de Funciones"
+<<<< Cap 46 "Creacion de la tabla de Asientos"
+<<<< Cap 47 "Creacion de la tabla de Reservaciones"
+<<<< Cap 48 "Creacion de la tabla de Asientos reservados..."
+<<<< Cap 49 "Insertar los datos"
