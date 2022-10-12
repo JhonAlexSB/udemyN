@@ -386,13 +386,142 @@ Parte 2:
 
 
 >>>> Seccion 4 "Lenguaje de manipulacion de los datos"
+
+
 <<<< Cap 24 "Introduccion"
 <<<< Cap 25 "Insertar datos en una tabla"
+
+CREATE DATABASE BODEGA;
+USE BODEGA;
+
+CREATE TABLE PRODUCTOS (
+  ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  NOMBRE VARCHAR (28),
+  PRECIO FLOAT,
+  PROVEEDOR VARCHAR (28)
+);
+
+DESC PRODUCTOS;
+
+SELECT * FROM PRODUCTOS;
+
+INSERT INTO PRODUCTOS (NOMBRE, PRECIO, PROVEEDOR) 
+VALUES 
+  ("CAFE", 3.99, "LUCKY-LUCAS-CA");
+
+SELECT * FROM PRODUCTOS;
+
+INSERT INTO PRODUCTOS (NOMBRE, PRECIO, PROVEEDOR) 
+VALUES 
+  ("HARINA DE TRIGO", 1.75, "EL_HORNO_DE_ATENAS"),
+  ("GASEOSA", 1.50, "YORELIS_2007");
+
+SELECT * FROM PRODUCTOS;
+
+# Ejercicio 4.1 
+  INGRESAR DATOS EN LA TABLA PRODUCTOS
+
+INSERT INTO PRODUCTOS (NOMBRE, PRECIO, PROVEEDOR) 
+VALUES 
+  ("MANTEQUILLA", 2, "MILANAT"),
+  ("GALLETA DE VAINILLA", 2, "DELICIAS_XIOMARA"),
+  ("ENCENDEDORES", 0.9, "LUCKY-LUCAS-CA"),
+  ("LECHE", 1.75, "MILANAT"),
+  ("MANTEQUILLA", 2, "MILANAT"),
+  ("GOMITAS", 0.9, "CHUCHU_ELDULCE");
+
+SELECT * FROM PRODUCTOS;
+
+SELECT * FROM PRODUCTOS;
+
+
 <<<< Cap 26 "Actualizar datos en una tabla"
+
+USE BODEGA;
+SELECT * FROM PRODUCTOS;
+
+UPDATE PRODUCTOS
+SET PROVEEDOR = "MOLTISANTI_CA"
+WHERE ID = 1; # por default solo se puede usar la columna ID por que es PK
+
+# Actualizar mas de una columna a la vez
+SET SQL_SAFE_UPDATES; # ESTO CAMBIA LA CONFIGURACION PARA USAR MAS DE UN DATO A LA VEZ
+
+UPDATE PRODUCTOS
+SET PRECIO = 0.9, PROVEEDOR = "MILANAT"
+WHERE NOMBRE = "GASEOSA";
+
+
+# Actualizar dos filas a la vez
+
+UPDATE PRODUCTOS
+SET PROVEEDOR = "MOLTISANTI_CA"
+WHERE PROVEEDOR = "LUCKY-LUCAS-CA"
+
 <<<< Cap 27 "Borrar datos de una tabla"
-<<<< Cap 28 "Completando nuestra base de datos S.."
+USE BODEGA;
+
+CREATE TABLE PERSONAS(
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  NOMBRE VARCHAR(20),
+  EDAD INT,
+  PAIS VARCHAR(20)
+);
+
+SELECT * FROM PERSONAS;
+
+INSERT INTO PERSONAS (NOMBRE, EDAD, PAIS)
+VALUES
+('Sergio', 20, 'Cuba'),
+('Jenny', 24, 'Argentina'),
+('Rafael', 22, 'Mexico'),
+('Furiyel', 23, 'Venezuela'),
+('Berenjenio', 19, 'Colombia'),
+('Joana', 22, 'Mexico')
+;
+
+# Eliminar una fila
+
+DELETE FROM PERSONAS
+WHERE NOMBRE = 'FURIYEL';
+
+
+# Eliminar varias filas
+
+DELETE FROM PERSONAS
+WHERE PAIS = 'MEXICO';
+
+
+# Eliminar todas las filas
+
+DELETE FROM PERSONAS;
+
+
+<<<< Cap 28 "Completando nuestra base de datos Sakila"
+USE sakila;
+
+SELECT * FROM ACTOR;
+
+desc actor;
+
+insert into sakila.actor (actor_id, first_name, last_name)
+values
+(201, 'Fiora', 'Bela');
+
+('Fiorella', 'Guelini'),
+('Liv', 'Tyler'),
+('Helen', 'Grady'),
+('Hector', 'Troya'),
+('Hugo', 'Balbuena'),
+('Robert', 'Pattison'),
+('Fred', 'Thompson'),
+('Nuvo', 'Milano');
+
+
 >>>> Seccion 5 "Diseno de una base de datos"
 <<<< Cap 29 "Introduccion"
+
+
 <<<< Cap 30 "Normalizacion de bases de datos"
 <<<< Cap 31 "1st Normal Form (1NF)"
 <<<< Cap 32 "2nd Normal Form (2Nf)"
