@@ -1,8 +1,12 @@
 Curso:
+https://www.udemy.com/course/sql-creacion-de-bd/
 
 Instructor:
+https://www.udemy.com/user/numpi/
 
 Este curso incluye:
+2 horas de vídeo bajo demanda
+9 recursos descargables
 
 >>>> Seccion
 <<<< Capitulo
@@ -520,26 +524,209 @@ values
 
 >>>> Seccion 5 "Diseno de una base de datos"
 <<<< Cap 29 "Introduccion"
-
-
 <<<< Cap 30 "Normalizacion de bases de datos"
+
+* Normalizar es el proceso de organizar los datos efectivamente dentro de una
+Base de Datos
+
+* En cada tabla se desea:
+  - Conservar solo los datos relacionados entre si y reubicar los datos no
+    relacionados en otra tabla
+  - Eliminar datos redundantes
+
+* Beneficios de la normalizacion
+  - Reducir espacio de almacenamiento
+  - Reducir anomalias de LMD (Lenguaje de Manejo de Datos)
+  - Mejorar el desempeno general de las consultas
+
 <<<< Cap 31 "1st Normal Form (1NF)"
+
+* Una tabla sigue la Primera forma normal si:
+  - Ninguna fila de datos esta repetida.
+  - Cada columna tiene un valor unico.
+  - La tabla tiene una Primary Key.
+
 <<<< Cap 32 "2nd Normal Form (2Nf)"
+
+* Una tabla sigue la Segunda forma normal si:
+  - Sigue las reglas de la Primera forma normal.
+  - Toda Columna que no es CLAVE PRIMARIA es dependiente de la CLAVE PRIMARIA
+    ENTERA.
+
 <<<< Cap 33 "3rd Normal Form (3NF)"
+
+* Una tabla sigue la Tercera forma normal si:
+  - Sigue las reglas de la Segunda forma normal.
+  - Toda Columna no primaria (No forma parte de la PRIMARY KEY)
+    No depende de otra columna no primaria.
+
 <<<< Cap 34 "Relaciones"
+
+* En un RDBMS (Sistema de Base de Datos Relacional) las tablas estan
+  relacionadas entre si a las clavez primarias y foraneas.
+
+* Relaciones: Sus columnas estan vinculadas y restringidas entre si.
+
+* Las relaciones pueden ser:
+  - Uno a Uno.
+  - Uno a Muchos.
+  - Muchos a Muchos.
+
 <<<< Cap 35 "Relacion uno a uno (one to one)"
-<<<< Cap 36 "Relacion uno a muchos (many to one)..."
-<<<< Cap 37 "Relacion muchos a muchos (many to ...)"
+
+* Esta relacion se da cuando la KEY (clave) aparece no mas de una vez como KEY
+  en otra tabla y viceversa.
+
+<<<< Cap 36 "Relacion uno a muchos (many to one)"
+
+* Esta relacion se da cuando los valores de la PRIMARY KEY de una tabla puede
+  estar en multiples filas de una FOREIGN KEY en otra tabla.
+
+<<<< Cap 37 "Relacion muchos a muchos (many to many)"
+
+* Esta relacion se da cuando dos tablas pueden tener multiples instancias de si
+  mismas.
+* Para esta relacion es necesario crear una tabla adicional
+
 <<<< Cap 38 "Constraint"
+
+* Las Constraints (Restricciones) se colocan a las columnas dentro de las
+  tablas.
+* Las Constraints restringen los datos que pueden ser insertados en la columna.
+* Tipos de retricciones que ya vimos:
+  - NOT NULL
+  - UNIQUE
+  - PRIMARY KEY
+  - FOREIGN KEY
+* Otros tipos de Constraints:
+  - CHECK: Esto controla el tipo de datos que se ingresaran en el campo.
+      CHECK (AGE BETWEEN 18 AND 28).
+  - DEFAULT: Si ningun valor es asignado al campo, esto permite agregar un valor
+    predeterminado.
+      Apellido DEFAULT 'Romero'
+
 <<<< Cap 39 "Constraint (Ejemplo)"
+
+USE BODEGA;
+
+CREATE TABLE EMPLEADOS(
+  ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  APELLIDO VARCHAR(28),
+  NOMBRE VARCHAR(28),
+  EDAD INT NOT NULL,
+  LOCAL_NOMBRE VARCHAR(28) DEFAULT 'Los proceres',
+  CONSTRAINT CK_EDAD CHECK (EDAD >= 18)
+);
+
+DESC EMPLEADOS;
+
+
+INSERT INTO EMPLEADOS (APELLIDO, NOMBRE, EDAD)
+VALUES
+  ('Tantamo', 'Ernesto', 23),
+  ('Pozo', 'Alejandro', 20)
+;
+
+select * from EMPLEADOS;
+
+INSERT INTO EMPLEADOS (APELLIDO, NOMBRE, EDAD)
+VALUES
+  ('Borja', 'Juan', 15)
+;
+
+ALTER TABLE EMPLEADOS
+ALTER EDAD SET DEFAULT 19;
+
+INSERT INTO EMPLEADOS (APELLIDO, NOMBRE)
+VALUES
+  ('Borja', 'Juan')
+;
+
+
 >>>> Seccion 6 "Caso Practico:Base de datos de un cine"
 <<<< Cap 40 "Introduccion"
 <<<< Cap 41 "Esquema de la base de datos"
+
+IMG: 
+---- Enlace
+  https://asset.cloudinary.com/dd60okmsj/08d9e313ba5ff643d354b1507df66931
+
 <<<< Cap 42 "Creacion de la tabla de Peliculas"
+
+SHOW DATABASES;
+
+CREATE DATABASE SIS_RESERVACIONES;
+
+USE SIS_RESERVACIONES;
+
+CREATE TABLE PELICULAS(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  NOMBRE VARCHAR(45) NOT NULL UNIQUE,
+  DUR_MIN INT NOT NULL
+);
+
+SHOW TABLES;
+DESC PELICULAS;
+
 <<<< Cap 43 "Creacion de la tabla de Clientes"
-<<<< Cap 44 "Creacion de la tabla de Salas"
+
+CREATE TABLE CLIENTES(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  NOMBRE VARCHAR(45),
+  APELLIDO VARCHAR(45) NOT NULL,
+  EMAIL VARCHAR(45) NOT NULL UNIQUE
+);
+
+<<<< Cap 45 "Creacion de la tabla de Salas"
+
+CREATE TABLE SALAS(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  NOMBRE VARCHAR(45) NOT NULL,
+  N_ASIENTOS INT NOT NULL
+);
+
 <<<< Cap 45 "Creacion de la tabla de Funciones"
+
+CREATE TABLE FUNCIONES(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  ID_PELICULA INT NOT NULL,
+  ID_SALA INT NOT NULL,
+  HORA_INICIO DATETIME NOT NULL,
+  FOREIGN KEY (ID_PELICULA) REFERENCES PELICULAS(ID),
+  FOREIGN KEY (ID_SALA) REFERENCES SALAS(ID)
+);
+
 <<<< Cap 46 "Creacion de la tabla de Asientos"
+
+CREATE TABLE ASIENTOS(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  FILA CHAR(1) NOT NULL,
+  NUMERO INT NOT NULL,
+  ID_SALA INT NOT NULL,
+  FOREIGN KEY (ID_SALA) REFERENCES SALAS(ID)
+);
+
 <<<< Cap 47 "Creacion de la tabla de Reservaciones"
+
+CREATE TABLE RESERVACIONES(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  ID_FUNCION INT NOT NULL,
+  ID_CLIENTE INT NOT NULL,
+  FOREIGN KEY (ID_FUNCION) REFERENCES FUNCIONES(ID),
+  FOREIGN KEY (ID_CLIENTE) REFERENCES CLIENTES(ID)
+);
+
 <<<< Cap 48 "Creacion de la tabla de Asientos reservados..."
+
+CREATE TABLE ASIENTOS_RESERVADOS(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  ID_RESERVACIONES INT NOT NULL,
+  ID_ASIENTO INT NOT NULL,
+  FOREIGN KEY (ID_RESERVACIONES) REFERENCES RESERVACIONES(ID),
+  FOREIGN KEY (ID_ASIENTO) REFERENCES ASIENTOS(ID)
+);
+
 <<<< Cap 49 "Insertar los datos"
+
+
+>>>> Seccion 7 ""
