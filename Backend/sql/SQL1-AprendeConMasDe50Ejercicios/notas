@@ -15,6 +15,7 @@ Este curso incluye:
 <<<< Capitulo
 .... Recursos
 ---- Enlaces
+++++ Articulo
 
 
 >>>> Seccion 1 "Introduccion"
@@ -26,15 +27,30 @@ Este curso incluye:
 >>>> Seccion 2 "SELECT,DISTINCT,ORDER BY"
 
 <<<< Cap 4 "Ejercicio practio #1"
+>> 'Selectores'
+select * from sakila.actor;
+select actor_id, first_name, last_name, last_update from sakila.actor;
+select actor_id, first_name as Nombre, last_name as Apellido, last_name from sakila.actor limit 10;
 
-
+select * from sakila.city;
+>> distinct
 <<<< Cap 5 "Ejercicio practio #2"
+select distinct (store_id) from sakila.customer;
 
+select * from sakila.payment;
+select distinct (customer_id) from sakila.payment;
 
 <<<< Cap 6 "Ejercicio practio #3"
+>> order by
+select * from sakila.country order by country;
+select * from sakila.country order by country DESC;
+select * from sakila.country order by country ASC;
 
+select * from customer order by first_name asc;
 
 <<<< Cap 7 "Ejercicio practio #4"
+++++ Articulo
+
 
 
 <<<< Cap 8 "Ejercicio practio #5"
@@ -261,15 +277,52 @@ select * from film where release_year = 2006 AND title like 'ALI%';
 
 
 <<<< Cap 41 "Ejercicio practio #32"
-
+select *
+from sakila.film;
+select *
+from sakila.language;
+>> Unir con un inner join
+select *
+from sakila.film f
+inner join sakila.language l on (f.language_id = l.language_id)
+>> Seleccionar tablas
+select f.title, f.description, f.release_year, f.language_id, l.name
+from sakila.film f
+inner join sakila.language l on (f.language_id = l.language_id)
 
 <<<< Cap 42 "Ejercicio practio #33"
+select * from sakila.address;
+select * from sakila.city;
 
+select * from sakila.address a inner join sakila.city c on (a.city_id = c.city_id)
+
+select a.address as Direccion, c.city as Ciudad
+from sakila.address a inner join sakila.city c on (a.city_id = c.city_id)
 
 <<<< Cap 43 "Ejercicio practio #34"
+desc sakila.customer;
+desc sakila.actor;
 
+select 
+c.customer_id,
+c.last_name,
+c.first_name,
+a.actor_id,
+a.first_name,
+a.last_name
+from sakila.customer c
+right join sakila.actor a on (c.last_name = a.last_name)
 
 <<<< Cap 44 "Ejercicio practio #35"
+select  
+c.customer_id,
+c.first_name,
+c.last_name,
+a.actor_id,
+a.first_name,
+a.last_name
+from sakila.customer c
+left join sakila.actor a on (c.last_name = a.last_name)
 
 
 <<<< Cap 45 "Ejercicio practio #36"
