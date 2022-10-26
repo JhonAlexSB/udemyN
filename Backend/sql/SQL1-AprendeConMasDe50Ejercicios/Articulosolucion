@@ -1,0 +1,118 @@
+<<<< Cap 9 "Respuestas Seccion 2"
+Ejercicio práctico #4
+
+select store_id as Tienda, first_name as Nombre, last_name as Apellido
+
+from sakila.customer
+
+order by Apellido desc
+
+Ejercicio práctico #5
+
+select distinct amount from sakila.payment order by amount asc
+
+
+<<<< Cap 48 "Respuestas Seccion 8"
+Ejercicio práctico #36
+
+select 
+
+a.address,
+
+c.city,
+
+co.country
+
+from sakila.address a 
+
+inner join sakila.city c on (a.city_id = c.city_id)
+
+inner join sakila.country co on (c.country_id = co.country_id);
+
+Ejercicio práctico #37
+
+select 
+
+c.first_name,
+
+a.address,
+
+s.store_id
+
+from sakila.customer c
+
+left join sakila.store s on (c.store_id = s.store_id)
+
+left join sakila.address a on (c.address_id = a.address_id)
+
+Ejercicio práctico #38
+
+select r.rental_id,
+
+s.first_name from sakila.rental r
+
+inner join sakila.staff s on (r.staff_id = s.staff_id)
+
+
+
+<<<< Cap 56 "Respuestas Seccion 9"
+Ejercicio práctico #44
+
+select count(rental_id)
+
+from sakila.rental
+
+Ejercicio práctico #45
+
+select max(amount)
+
+from sakila.payment
+
+
+<<<< Cap 60 "Respuestas Seccion 10"
+Ejercicio práctico #48
+
+SELECT customer_id, MAX(rental_date)
+
+FROM sakila.rental
+
+GROUP BY customer_id;
+
+
+<<<< Cap 64 "Respuestas Seccion 11"
+Ejercicio práctico #51
+
+SELECT last_name, COUNT(*)
+
+FROM sakila.actor
+
+GROUP BY last_name
+
+HAVING COUNT(*) > 3;
+
+<<<< Cap 66 "Respuestas a ejercicios complementarios"
+
+select * from actor where first_name = 'Scarlett';
+
+select * from actor where last_name like 'Johansson';
+
+select count(distinct last_name) from actor;
+
+select last_name from actor group by last_name having count(*) = 1;
+
+select actor.actor_id, actor.first_name, actor.last_name,
+
+       count(actor_id) as film_count
+
+from actor join film_actor using (actor_id)
+
+group by actor_id
+
+order by film_count desc
+
+select film.film_id, film.title, store.store_id, inventory.inventory_id
+
+from inventory join store using (store_id) join film using (film_id)
+
+where film.title = 'Academy Dinosaur' and store.store_id = 1;
+

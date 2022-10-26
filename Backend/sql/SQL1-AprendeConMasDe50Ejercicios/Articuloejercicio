@@ -1,0 +1,98 @@
+<<<< Cap 7 "Ejercicio practio #4"
+
+Has terminado la Sección 2 SELECT, DISTINCT, ORDER BY. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta store_id, first_name y last_name de la tabla customer de la base de datos sakila.
+
+Cambia el nombre de las columnas store_id, first_name y last_name a Tienda, Nombre y Apellido respectivamente.
+
+Ordena de manera descendente la columna Apellido
+
+
+<<<< Cap 8 "Ejercicio practio #5"
+
+Has terminado la Sección 2 SELECT, DISTINCT, ORDER BY. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+¿Cuál es la cantidad mas baja y mas alta de la columna amount?
+
+
+<<<< Cap 45 "Ejercicio practio #36"
+Has terminado la Sección 8 INNER JOIN, LEFT JOIN, RIGHT JOIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla address de la base de datos sakila.
+
+Realiza un INNER JOIN con las tablas city y country
+
+Mostrar las columnas address, city, country
+
+
+<<<< Cap 46 "Ejercicio practio #37"
+Has terminado la Sección 8 INNER JOIN, LEFT JOIN, RIGHT JOIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla customer de la base de datos sakila.
+
+Realiza un LEFT JOIN con las tablas store y address
+
+Mostrar las columnas first_name, address, store_id
+
+
+<<<< Cap 47 "Ejercicio practio #38"
+Has terminado la Sección 8 INNER JOIN, LEFT JOIN, RIGHT JOIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla rental de la base de datos sakila.
+
+Realiza un INNER JOIN con la tabla staff
+
+Mostrar las columnas rental_id, first_name
+
+<<<< Cap 54 "Ejercicio practio #44"
+Has terminado la Sección 9 COUNT, AVG, SUM, MAX, MIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla rental de la base de datos sakila.
+
+Realiza un COUNT de  la columna rental_id
+
+<<<< Cap 55 "Ejercicio practio #45"
+Has terminado la Sección 9 COUNT, AVG, SUM, MAX, MIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Realiza un MAX de  la columna amount
+
+
+<<<< Cap 59 "Ejercicio practio #48"
+Has terminado la Sección 10 GROUP BY. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla rental de la base de datos sakila.
+
+Realiza un MAX de  la columna rental_date 
+
+
+<<<< Cap 63 "Ejercicio practio #51"
+Has terminado la Sección 10 HAVING . Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla actor de la base de datos sakila.
+
+Realiza un COUNT de  last_name
+
+Mostrar cuando el COUNT sea mayor de 2
+
+
+<<<< Cap 65 "Lista de ejercicios"
+Has terminado el curso. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+
+¿Qué actores tienen el primer nombre 'Scarlett'?
+
+¿Qué actores tienen el apellido "Johansson"?
+
+¿Cuántos apellidos de actores distintos hay?
+
+¿Qué apellidos no se repiten?
+
+¿Qué actor ha aparecido en la mayoría de las películas?
+
+¿Se puede alquilar ‘Academy Dinosaur’ en la tienda 1?
+

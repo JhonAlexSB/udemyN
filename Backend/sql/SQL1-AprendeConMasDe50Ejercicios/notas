@@ -47,14 +47,13 @@ select * from sakila.country order by country ASC;
 select * from customer order by first_name asc;
 
 <<<< Cap 7 "Ejercicio practio #4"
-++++ Articulo
-
-
+++++ Articuloejercicio
 
 <<<< Cap 8 "Ejercicio practio #5"
-
+++++ Articuloejercicio
 
 <<<< Cap 9 "Respuestas Seccion 2"
+++++ Articulosolucion
 
 >>>> Seccion 3 "WHERE"
 <<<< Cap 10 "Ejercicio practio #6"
@@ -318,15 +317,16 @@ left join sakila.actor a on (c.last_name = a.last_name)
 
 
 <<<< Cap 45 "Ejercicio practio #36"
-
+++++ Articuloejercicio
 
 <<<< Cap 46 "Ejercicio practio #37"
-
+++++ Articuloejercicio
 
 <<<< Cap 47 "Ejercicio practio #38"
-
+++++ Articuloejercicio
 
 <<<< Cap 48 "Respuestas Seccion 8"
+++++ Articulosolucion
 
 >>>> Seccion 9 "COUNT,AVG,SUM,MAX,MIN"
 <<<< Cap 49 "Ejercicio practio #39"
@@ -359,12 +359,13 @@ select max(length) from sakila.film;
 select min(length) from sakila.film;
 
 <<<< Cap 54 "Ejercicio practio #44"
-
+++++ Articuloejercicio
 
 <<<< Cap 55 "Ejercicio practio #45"
-
+++++ Articuloejercicio
 
 <<<< Cap 56 "Respuestas Seccion 9"
+++++ Articulosolucion
 
 >>>> Seccion 10 "GROUP BY"
 <<<< Cap 57 "Ejercicio practio #46"
@@ -402,8 +403,10 @@ on (c.customer_id=p.customer_id)
 group by c.customer_id, c.first_name, c.last_name;
 
 <<<< Cap 59 "Ejercicio practio #48"
+++++ Articuloejercicio
 
 <<<< Cap 60 "Respuestas Seccion 10"
+++++ Articulosolucion
 
 >>>> Seccion 11 "HAVING"
 <<<< Cap 61 "Ejercicio practio #49"
@@ -451,13 +454,17 @@ having sum(p.amount) < 60
 order by sum(p.amount) desc;
 
 <<<< Cap 63 "Ejercicio practio #51"
+++++ Articuloejercicio
 
 <<<< Cap 64 "Respuestas Seccion 11"
+++++ Articulosolucion
 
 >>>> Seccion 12 "Ejercicios complementarios"
 <<<< Cap 65 "Lista de ejercicios"
+++++ Articuloejercicio
 
 <<<< Cap 66 "Respuestas a ejercicios complementarios"
+++++ Articulosolucion
 
 >>>> Seccion 13 "Terminaste"
 <<<< Cap 67 "Nos evemos en clase"
