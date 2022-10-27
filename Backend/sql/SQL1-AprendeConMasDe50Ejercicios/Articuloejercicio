@@ -18,6 +18,70 @@ Consulta la tabla payment de la base de datos sakila.
 ¿Cuál es la cantidad mas baja y mas alta de la columna amount?
 
 
+<<<< Cap 19 "Ejercicio practio #14"
+Has terminado la Sección 4 AND, OR, NOT. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Filtra la información donde customer_id sea igual a 36, amount sea mayor a 0.99 y staff_id sea igual a 1.
+
+
+<<<< Cap 20 "Ejercicio practio #15"
+Has terminado la Sección 4 AND, OR, NOT. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla rental de la base de datos sakila.
+
+Filtra la información donde staff_id no sea 1, customer_id sea mayor a 250 y inventory_id sea menor de 100.
+
+
+<<<< Cap 25 "Ejercicio practio #19"
+Has terminado la Sección 5 IN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film_text de la base de datos sakila.
+
+Filtra la información donde title  sea ZORRO ARK, VIRGIN DAISY, UNITED PILOT
+
+
+<<<< Cap 26 "Ejercicio practio #20"
+Has terminado la Sección 5 IN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla city de la base de datos sakila.
+
+Filtra la información donde city sea Chiayi, Dongying, Fukuyama y Kilis.
+
+
+<<<< Cap 30 "Ejercicio practio #23"
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla payment de la base de datos sakila.
+
+Filtra la información donde amount esté entre 2.99 y 4.99,  staff_id sea igual a 2 y customer_id sea 1 y 2.
+
+
+<<<< Cap 31 "Ejercicio practio #24"
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla address de la base de datos sakila.
+
+Filtra la información donde city_id esté entre 300 y 350,  
+
+
+<<<< Cap 32 "Ejercicio practio #25"
+Has terminado la Sección 6 BETWEEN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film de la base de datos sakila.
+
+Filtra la información donde rental_rate esté entre 0.99 y 2.99, length sea menor igual de 50  y replacement_cost sea menor de 20.
+
+
+<<<< Cap 38 "Ejercicio practio #30"
+Has terminado la Sección 7 LIKE. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
+
+Consulta la tabla film de la base de datos sakila.
+
+Filtra la información donde release_year sea igual a 2006  y title empiece con ALI.
+
+
 <<<< Cap 45 "Ejercicio practio #36"
 Has terminado la Sección 8 INNER JOIN, LEFT JOIN, RIGHT JOIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
 
@@ -47,12 +111,14 @@ Realiza un INNER JOIN con la tabla staff
 
 Mostrar las columnas rental_id, first_name
 
+
 <<<< Cap 54 "Ejercicio practio #44"
 Has terminado la Sección 9 COUNT, AVG, SUM, MAX, MIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.
 
 Consulta la tabla rental de la base de datos sakila.
 
 Realiza un COUNT de  la columna rental_id
+
 
 <<<< Cap 55 "Ejercicio practio #45"
 Has terminado la Sección 9 COUNT, AVG, SUM, MAX, MIN. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta. Las respuestas estarán al final de la sección.

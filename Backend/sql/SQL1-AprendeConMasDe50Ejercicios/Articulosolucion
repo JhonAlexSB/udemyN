@@ -12,6 +12,74 @@ Ejercicio práctico #5
 select distinct amount from sakila.payment order by amount asc
 
 
+<<<< Cap 15 "Respuesta Seccion 3"
+Ejercicio práctico #9
+
+select description, release_year  from sakila.film
+
+where title = 'IMPACT ALADDIN'
+
+Ejercicio práctico #10
+
+select * from sakila.payment
+
+where amount > 0.99
+
+
+<<<< Cap 21 "Respuestas Seccion 4"
+Ejercicio práctico #14
+
+select * from sakila.payment
+
+where customer_id = 36
+
+and amount > 0.99
+
+and staff_id = 1
+
+Ejercicio práctico #15
+
+select * from sakila.rental
+
+where not staff_id = 1
+
+and customer_id > 250
+
+and inventory_id < 100
+
+
+<<<< Cap 27 "Respuestas Seccion 5"
+Ejercicio práctico #19
+
+select * from sakila.film_text
+
+where title  in ('ZORRO ARK', 'VIRGIN DAISY', 'UNITED PILOT')
+
+Ejercicio práctico #20
+
+select * from sakila.city where city in ('Chiayi', 'Dongying', 'Fukuyama', 'Kilis')
+
+
+<<<< Cap 33 "Respuestas Seccion 6"
+ejercicio práctico #23
+
+select * from sakila. payment where (amount  between 2.99 and 4.99 ) and staff_id = 2 and customer_id in (1,2)
+
+Ejercicio práctico #24
+
+select * from sakila.address where city_id between 300 and 350
+
+Ejercicio práctico #25
+
+select * from sakila.film where (rental_rate between 0.99 and 2.99 )and length <=50 and replacement_cost < 20
+
+
+<<<< Cap 39 "Respuestas Seccion 7"
+Ejercicio práctico #30
+
+select * from sakila.film where release_year = 2006 and title like 'ALI%'
+
+
 <<<< Cap 48 "Respuestas Seccion 8"
 Ejercicio práctico #36
 
@@ -54,7 +122,6 @@ s.first_name from sakila.rental r
 inner join sakila.staff s on (r.staff_id = s.staff_id)
 
 
-
 <<<< Cap 56 "Respuestas Seccion 9"
 Ejercicio práctico #44
 
@@ -89,6 +156,7 @@ FROM sakila.actor
 GROUP BY last_name
 
 HAVING COUNT(*) > 3;
+
 
 <<<< Cap 66 "Respuestas a ejercicios complementarios"
 
