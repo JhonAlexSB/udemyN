@@ -21,15 +21,46 @@ Este curso incluye:
 <<<< Cap 1 "Bienvenido a numpi"
 <<<< Cap 2 "Bienvenido al curso"
 <<<< Cap 3 "Instalacion"
+.... Recursos
 
 >>>> Seccion 2 "Funciones Utiles"
 
 <<<< Cap 4 "CHAR_LENGTH()"
-<<<< Cap 5 "CONTACT()"
-<<<< Cap 6 "CONTACT_WS()"
+select * from category;
+SELECT name,CHAR_LENGTH(name) as LongitudCadena FROM category;
+
+select * from city;
+SELECT city,CHAR_LENGTH(city) FROM city;
+
+
+<<<< Cap 5 "CONCAT()"
+SELECT * FROM customer;
+ 
+SELECT customer_id, CONCAT(first_name, last_name) as "Nombre completo" from customer;
+SELECT customer_id, CONCAT(first_name, " ", last_name) as "Nombre completo" from customer;
+
+<<<< Cap 6 "CONCAT_WS()"
+SELECT * FROM film;
+SELECT CONCAT_WS(" - ", title, description, release_year) FROM film;
+
+
 <<<< Cap 7 "ROUND()"
+SELECT * FROM payment;
+
+SELECT rental_id, amount, ROUND(amount,0) FROM payment;
+
+
 <<<< Cap 8 "UCASE(), LCASE()"
+SELECT * FROM actor;
+
+SELECT 
+first_name, last_name,
+LCASE( CONCAT(first_name, " ", last_name) ) as "Nombre Completo"FROM actor;
+
+
 <<<< Cap 9 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
 
 >>>> Seccion 3 "INSERT INTO"
 

@@ -1,0 +1,18 @@
+Ejercicios para el estudiante #1
+Cap9
+
+Has terminado la Sección 2 Funciones Útiles. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Usa la función CHAR_LENGTH() en la tabla customer y calcula la longitud de la columna email.
+
+Usa la función CONCAT() en la tabla customer y has un concatenado entre first_name, last_name y email.
+
+Usa la función CONCAT_WS() en la tabla film y has un concatenado de todas las columnas.
+
+Consulta la tabla payment y has un group by por customer_id para el promedio de amount, después usa la función ROUND() para redondear a cero decimales el promedio.
+
+Usa la función UCASE() en la tabla city y convierte la columna city en mayúsculas.
+
+
