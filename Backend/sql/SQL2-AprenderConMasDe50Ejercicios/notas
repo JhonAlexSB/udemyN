@@ -150,13 +150,72 @@ ArticuloEjercicio
 
 
 >>>> Seccion 7 "Consultas Multiples"
-
 <<<< Cap 24 "Ejercicio 1"
+?Quien ha vendido mas del staff en agosto del 2005
+SELECT * FROM staff;
+
+SELECT 
+a.first_name,
+a.last_name,
+sum(b.amount) as 'Total amount'
+FROM staff a
+INNER JOIN payment p on  (a.staff_id = p.staff_id)
+AND b.payment_date lIKE '2005-08%'
+GROUP BY a.first_name, a.last_name
+
+'Tabla STAFF da error en termux'[Error]
+
 <<<< Cap 25 "Ejercicio 2"
+"Haga una lista de cada pelicula y el numero de actores que figuran en esa
+pelicula. Utiliza tablas film_actor y film"
+
+desc film_actor;
+
+SELECT * FROM actor a 
+INNER JOIN film b ON (a.film_id=b.film_id);
+
+SELECT 
+b.title,
+count(actor_id) as 'Contador de Actores'
+FROM actor a 
+INNER JOIN film b ON (a.film_id=b.film_id) 
+GROUP BY b.title;
+
+" Actor no tiene tabla film_id"[Error]
+
 <<<< Cap 26 "Ejercicio 3"
+"?Cuantas copias de la pelicula Hunchback Impossible existen en el sistema de inventario"
+
+SELECT * FROM film;
+
+SELECT * FROM film f
+INNER JOIN inventory i ON (f.film_id=i.film_id);
+
+SELECT 
+title,
+COUNT(title) AS 'COPIAS DISPONIBLES'
+FROM film 
+INNER JOIN inventory ON (film.film_id = inventory.film_id)
+WHERE title = 'Hunchback Impossible';
+
 <<<< Cap 27 "Ejercicio 4"
+"Anote el total pagado por cada cliente, Listar los clientes alfabeticamente por apellido"
+
+SELECT 
+first_name,
+last_name,
+sum(amount) AS 'Total Pagado por cliente'
+FROM payment p
+INNER JOIN customer c ON (p.customer_id=c.customer_id)
+GROUP BY first_name, last_name
+ORDER BY last_name;
+
 <<<< Cap 28 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
+
 <<<< Cap 29 "Respuesta"
+ArticuloSolucion
 
 >>>> Seccion 8 "SUBQUERIES"
 

@@ -70,3 +70,21 @@ Has terminado la Sección 6 Case. Ahora es momento de poner en práctica lo apre
 
 Usa la función CASE en la tabla film y calcula 3 casos, si rental_rate es menor que 1 ingresa "Pelicula Mala", si la calificacion esta dentro de 1 y 3 que muestre "Pelicula Buena", si es mayor que muestre "Pelicula Excelente"
 
+
+Cap28
+Ejercicios para el estudiante #6
+
+Has terminado la Sección 7 Consultas Multitabla. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Resuelve el siguiente problema:
+
+Encuentra DVD vencidos
+
+Muchas tiendas de DVD producen una lista diaria de alquileres vencidos para que los clientes puedan ser contactados y se les pida que devuelvan sus DVD vencidos.
+
+
+
+Para crear una lista de este tipo, busque películas en la tabla de alquiler con una fecha de retorno NULA y donde la fecha de alquiler sea más antigua que la duración del alquiler especificada en la tabla de películas. Si es así, la película está atrasada y debemos producir el nombre de la película junto con el nombre del cliente y el número de teléfono.
+
