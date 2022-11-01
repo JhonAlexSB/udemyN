@@ -123,10 +123,31 @@ ArticuloEjercicio
 
 
 >>>> Seccion 6 "CASE"
-
 <<<< Cap 21 "Ejercicio 1"
+SELECT * FROM address;
+
+SELECT address, address2,
+CASE 
+  WHEN address2 IS NULL THEN 'Sin direcicon2'
+  ELSE 'Con direccion'
+  END AS Comentario
+  FROM address;
+
 <<<< Cap 22 "Ejercicio 2"
+SELECT * FROM payment;
+
+SELECT payment_id, amount,
+CASE 
+  WHEN amount <1 THEN 'Precio Minimo'
+  WHEN amount BETWEEN 1 AND 3 THEN 'Precio Intermedio'
+  ELSE 'Precio Maximo'
+END AS Comentario
+FROM payment;
+
 <<<< Cap 23 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
+
 
 >>>> Seccion 7 "Consultas Multiples"
 

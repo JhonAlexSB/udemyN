@@ -61,3 +61,12 @@ Has terminado la Sección 5  ALTER TABLE. Ahora es momento de poner en práctica
 Usa la función ALTER TABLE  y agrega la columna categoria a la tabla film_text, llena la columna de los primeros 10 film_id.
 
 
+Cap23
+Ejercicios para el estudiante #5
+
+Has terminado la Sección 6 Case. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Usa la función CASE en la tabla film y calcula 3 casos, si rental_rate es menor que 1 ingresa "Pelicula Mala", si la calificacion esta dentro de 1 y 3 que muestre "Pelicula Buena", si es mayor que muestre "Pelicula Excelente"
+
