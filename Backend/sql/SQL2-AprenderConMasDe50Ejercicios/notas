@@ -218,12 +218,63 @@ ArticuloEjercicio
 ArticuloSolucion
 
 >>>> Seccion 8 "SUBQUERIES"
-
 <<<< Cap 30 "Ejercicio 1"
+
+"Quiero que me filtre todos los tiulos que empiezen por K y por O y el titulo
+sea en idioma ingles"
+"Esta consulta hace uso de las tablas film y language"
+
+SELECT title FROM film
+WHERE title like 'K%' OR title like 'O%'
+AND title IN 
+(
+SELECT title FROM film WHERE language_id IN 
+  (
+  SELECT language_id FROM language WHERE name = 'English'
+  )
+)
+
 <<<< Cap 31 "Ejercicio 2"
+SELECT * FROM actor;
+
+SELECT 
+first_name,
+last_name
+FROM actor
+WHERE actor_id IN
+(
+SELECT actor_id FROM film_actor WHERE film_id IN 
+  (
+    SELECT film_id FROM film WHERE title = 'Alone Trip'    
+  )
+);
+
+"Arrojara los actores con los nombres de pelicula asociada a Alone Trip"
+
 <<<< Cap 32 "Ejercicio 3"
+SELECT * FROM film;
+
+SELECT 
+title
+FROM film
+WHERE film_id IN
+(
+SELECT film_id FROM film_category WHERE category_id IN
+  (
+    SELECT category_id FROM category WHERE name = 'Family'
+  )
+);
+
+"Se explica en el video el orden de los subqueries que es primero la consulta
+por el codigo de 'Family'"
+
 <<<< Cap 33 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
+
 <<<< Cap 34 "Respuesta"
+ArticuloSolucion
+
 
 >>>> Seccion 9 "VIEWS"
 

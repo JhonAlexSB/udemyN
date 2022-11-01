@@ -88,3 +88,15 @@ Muchas tiendas de DVD producen una lista diaria de alquileres vencidos para que 
 
 Para crear una lista de este tipo, busque películas en la tabla de alquiler con una fecha de retorno NULA y donde la fecha de alquiler sea más antigua que la duración del alquiler especificada en la tabla de películas. Si es así, la película está atrasada y debemos producir el nombre de la película junto con el nombre del cliente y el número de teléfono.
 
+
+Cap33
+Ejercicios para el estudiante #8
+
+Has terminado la Sección 8 Subqueries . Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Encuentre el nombre completo y la dirección de correo electrónico de todos los clientes que hayan alquilado una película de acción.
+
+Todos los pagos que exceden el promedio para cada cliente junto con el recuento total de pagos que exceden el promedio.
+
