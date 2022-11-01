@@ -22,7 +22,6 @@ Ejercicios para el estudiante #2
 Has terminado la Sección 3 Insert Into. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
 
 
-
 Usa la función INSER INTO y agrega un registro a la tabla actor.
 
 Usa la función INSER INTO y agrega un registro a la tabla address.
@@ -32,5 +31,24 @@ Usa la función INSER INTO y agrega un registro a la tabla category.
 Usa la función INSER INTO y agrega un registro a la tabla customer.
 
 Usa la función INSER INTO y agrega un registro a la tabla film_text.
+
+
+Cap 17
+Ejercicios para el estudiante #3
+
+Has terminado la Sección 4 Update. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Usa la función UPDATE y agrega un registro a la tabla actor.
+
+Usa la función UPDATE y agrega un registro a la tabla address.
+
+Usa la función UPDATE y agrega un registro a la tabla category.
+
+Usa la función UPDATE y agrega un registro a la tabla customer.
+
+Usa la función UPDATE y agrega un registro a la tabla film_text.
+
 
 

@@ -82,12 +82,23 @@ INSERT INTO category (name) VALUES ('CIENCIA FICCION');
 .... Recursos
 ArticuloEjercicio
 
->>>> Seccion 4 "UPDATE"
 
+>>>> Seccion 4 "UPDATE"
 <<<< Cap 14 "Ejerciocio 1"
+SELECT * FROM city;
+UPDATE city SET city = 'NEW YORK' WHERE country_id = 87;
+
 <<<< Cap 15 "Ejerciocio 2"
+SELECT * FROM actor;
+UPDATE actor set first_name = 'RAUL' WHERE last_name = 'GUINESS':
+
 <<<< Cap 16 "Ejerciocio 3"
+SELECT * FROM staff;
+UPDATE staff SET first_name = 'Pablo' WHERE staff_id = 2;
+
 <<<< Cap 17 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
 
 >>>> Seccion 5 "ALTER TABLE"
 
