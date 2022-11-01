@@ -273,13 +273,36 @@ por el codigo de 'Family'"
 ArticuloEjercicio
 
 <<<< Cap 34 "Respuesta"
+.... Recursos
 ArticuloSolucion
 
 
 >>>> Seccion 9 "VIEWS"
-
 <<<< Cap 35 "Ejercicio 1"
+"Una view es una tabla virtual para mostrar datos en especificos"
+
+CREATE VIEW ingresos_por_genero AS
+SELECT name, SUM(amount)
+FROM category c
+INNER JOIN film_category f
+ON (c.category_id=f.category_id)
+INNER JOIN inventory i
+ON (f.film_id=i.film_id)
+INNER JOIN rental r
+ON (i.inventory_id=r.inventory_id)
+INNER JOIN payment p
+ON (r.rental_id=p.rental_id)
+GROUP BY name
+ORDER BY SUM(amount) DESC LIMIT 5;
+
+SELECT * FROM ingresos_por_genero;
+
+DROP VIEW ingresos_por_genero;
+
+
 <<<< Cap 36 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
 
 >>>> Seccion 10 "Codigos del curso"
 

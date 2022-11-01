@@ -100,3 +100,19 @@ Encuentre el nombre completo y la dirección de correo electrónico de todos los
 
 Todos los pagos que exceden el promedio para cada cliente junto con el recuento total de pagos que exceden el promedio.
 
+
+Cap36
+Ejercicios para el estudiante #8
+
+Has terminado la Sección 9 Views . Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+La vista "lista de clientes" proporciona una lista de clientes, con el nombre y el apellido concatenados
+
+juntos y direcciones de información combinadas en una sola vista.
+
+
+
+La vista "lista de clientes" incorpora datos de las tablas de clientes, direcciones, ciudades y países.
+
