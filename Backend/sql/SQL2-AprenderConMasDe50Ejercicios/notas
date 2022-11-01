@@ -65,9 +65,22 @@ ArticuloEjercicio
 >>>> Seccion 3 "INSERT INTO"
 
 <<<< Cap 10 "Ejercicio 1"
+SELECT * FROM city;
+INSERT INTO city (city,country_id) VALUES ('prueba', 100)
+INSERT INTO city (city_id,city,country_id) VALUES (601, 'prueba', 100)
+
 <<<< Cap 11 "Ejercicio 2"
+SELECT * FROM ACTOR;
+INSERT INTO actor (first_name, last_name) VALUES ('CARLOS','BERNAL');
+
 <<<< Cap 12 "Ejercicio 3"
+SELECT * FROM category;
+INSERT INTO category (name) VALUES ('CIENCIA FICCION');
+
+
 <<<< Cap 13 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
 
 >>>> Seccion 4 "UPDATE"
 
