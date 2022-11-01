@@ -101,10 +101,26 @@ UPDATE staff SET first_name = 'Pablo' WHERE staff_id = 2;
 ArticuloEjercicio
 
 >>>> Seccion 5 "ALTER TABLE"
-
 <<<< Cap 18 "Ejercicio 1"
+desc actor;
+
+ALTER TABLE actor ADD COLUMN genero_actor char(1);
+ 
+DESC actor;
+
+ALTER TABLE actor DROP COLUMN genero_actor;
+
 <<<< Cap 19 "Ejercicio 1"
+SELECT * FROM actor;
+
+UPDATE actor SET genero_actor = 'M' WHERE actor_id = 1;
+UPDATE actor SET genero_actor = 'M' WHERE actor_id = 2;
+UPDATE actor SET genero_actor = 'F' WHERE actor_id = 3;
+
 <<<< Cap 20 "Ejercicios para el estudiante"
+.... Recursos
+ArticuloEjercicio
+
 
 >>>> Seccion 6 "CASE"
 

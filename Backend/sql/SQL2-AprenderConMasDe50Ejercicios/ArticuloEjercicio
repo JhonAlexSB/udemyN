@@ -51,4 +51,13 @@ Usa la función UPDATE y agrega un registro a la tabla customer.
 Usa la función UPDATE y agrega un registro a la tabla film_text.
 
 
+Cap20
+Ejercicios para el estudiante #4
+
+Has terminado la Sección 5  ALTER TABLE. Ahora es momento de poner en práctica lo aprendido realizando la siguiente consulta.
+
+
+
+Usa la función ALTER TABLE  y agrega la columna categoria a la tabla film_text, llena la columna de los primeros 10 film_id.
+
 
