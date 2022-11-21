@@ -1,0 +1,84 @@
+Curso:
+https://www.udemy.com/course/hacking-wifi-desde-cero-2022/
+
+Instructor:
+https://www.udemy.com/user/kevin-9580/
+
+Este curso incluye:
+Habilidades y conocimientos para para vulnerar redes wifi y detectar ataques
+Aprenderás a construir un entorno de pruebas para poder ejecutar simulaciones de ataque
+Conocimientos fundamentales sobre el uso de Kali Linux
+Analisis de redes wifi en el área
+Técnicas para descifrar WPA/WPA2
+Aprenderás cuales son los técnicas de ataque más usadas para este tipo de redes
+
+>>>> Seccion
+<<<< Capitulo
+.... Recursos
+---- Enlaces
+
+>>>> Seccion 1 "Introduccion"
+<<<< Cap 1 "sobre el curso"
+
+
+>>>> Seccion 2 "Preparacion Del Entorno Del Trabajo"
+<<<< Cap 2 "Descarga e instalación de VMware"
+.... Recursos
+<<<< Cap 3 "Descarga y Virtualización Kali Linux en VMware"
+.... Recursos
+<<<< Cap 4 "Adaptadores y chipset compatibles"
+.... Recursos
+<<<< Cap 5 "Instalación de drivers para adaptador TL-WN722N v2/v3"
+<<<< Cap 6 "Configuración del Router"
+<<<< Cap 7 "Google Dorks para Búsqueda de soluciones a problemas"
+.... Recursos
+
+
+>>>> Seccion 3 "Comandos Basicos En Linux"
+o<<< Cap 8 "Primeros Pasos en Linux"
+<<<< Cap 9 "Manejo de Textos"
+<<<< Cap 10 "Administración de directorios"
+<<<< Cap 11 "Administración de archivos"
+<<<< Cap 12 "Otros comandos"
+
+
+>>>> Seccion 4 "Redes WPA/WPA2"
+<<<< Cap 13 "Configurando adaptador de red en modo monitor"
+<<<< Cap 14 "Macchanger para la falsificación MAC"
+<<<< Cap 15 "Airodump para escaneo de entorno"
+<<<< Cap 16 "Airodump para escaneo dirigido"
+<<<< Cap 17 "Ataque Deauth dirigido"
+<<<< Cap 18 "Ataque Deauth global"
+<<<< Cap 19 "Beacon Flood Mode Attack"
+<<<< Cap 20 "Disassociation Amok Mode Attack"
+<<<< Cap 21 "Extracción del Hash con Aircrack"
+
+
+>>>> Seccion 5 "Diccionarios"
+<<<< Cap 22 "Creación de diccionario con Crunch"
+<<<< Cap 23 "Creación de diccionario con Cupp"
+<<<< Cap 24 "Diccionarios en Kali y Descarga desde otros repositorios"
+.... Recursos
+
+
+>>>> Seccion 6 "Brute Force Attacks"
+<<<< Cap 25 "Fuerza bruta con Aircrack (Obteniendo clave de red)"
+<<<< Cap 26 "Fuerza bruta con John (Obteniendo clave de red)"
+<<<< Cap 27 "Extracción del Hash con CapJS Master"
+.... Recursos
+<<<< Cap 28 "Fuerza bruta con HashCat (Obteniendo clave de red)"
+<<<< Cap 29 "GenPMK Creación de diccionario de claves Pre Computadas (Rainbown tables)"
+<<<< Cap 30 "Fuerza bruta con Cowpatty utilizando Rainbown Tables"
+<<<< Cap 31 "Airolib para la creación de diccionario de claves Pre Computadas"
+
+
+>>>> Seccion 7 "Evil Twin Attacks"
+<<<< Cap 32 "Fundamentos de Evil Twin Attack"
+.... Recursos
+<<<< Cap 33 "Evil Twin Attack con Wifiphisher"
+<<<< Cap 34 "Instalación de Airgeddon"
+<<<< Cap 35 "Evil Twin Attack con Airgeddon"
+
+
+>>>> Seccion 8 "Cierre del curso"
+<<<< Cap 36 "Despedida temporal"
