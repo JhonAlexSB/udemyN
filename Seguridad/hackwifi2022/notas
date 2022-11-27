@@ -23,16 +23,32 @@ Aprenderás cuales son los técnicas de ataque más usadas para este tipo de red
 
 >>>> Seccion 2 "Preparacion Del Entorno Del Trabajo"
 <<<< Cap 2 "Descarga e instalación de VMware"
-.... Recursos
+.... Recurso1 https://www.vmware.com/latam/products/workstation-pro/workstation-pro-evaluation.html
 <<<< Cap 3 "Descarga y Virtualización Kali Linux en VMware"
-.... Recursos
+.... Recurso2 https://www.kali.org/get-kali/#kali-virtual-machines
 <<<< Cap 4 "Adaptadores y chipset compatibles"
-.... Recursos
+.... Recurso3
+https://www.aircrack-ng.org/doku.php?id=faq#what_is_the_best_wireless_card_to_buy  
+https://github.com/v1s1t0r1sh3r3/airgeddon/wiki/Cards%20and%20Chipsets
+https://wikidevi.wi-cat.ru/Main_Page
+http://en.techinfodepot.shoutwiki.com/wiki/TP-LINK_TL-WN722N_v3
+
+wikidevi = Para ver que chipset se tiene segun que marca
+Realtek Semiconductor Corp. RTL8188EUS 802.11n Wireless Network Adapter
+
 <<<< Cap 5 "Instalación de drivers para adaptador TL-WN722N v2/v3"
+
+>> Para ver los dispositivos usb conectados
+lsusb
+
+>> Listar interfaces inhalambricas
+realtek-rtl8188eus-dkms
+
+
 <<<< Cap 6 "Configuración del Router"
 <<<< Cap 7 "Google Dorks para Búsqueda de soluciones a problemas"
-.... Recursos
-
+.... Recurso4
+https://www.google.es/advanced_search
 
 >>>> Seccion 3 "Comandos Basicos En Linux"
 o<<< Cap 8 "Primeros Pasos en Linux"
