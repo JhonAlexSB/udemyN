@@ -1,0 +1,59 @@
+Curso:
+https://www.udemy.com/course/angular-10-fundamentos-8-app/
+
+Instructor:
+
+Este curso incluye:
+
+>>>> Seccion
+<<<< Capitulo
+.... Recursos
+---- Enlaces
+
+Revisar version
+  node -v
+  npm -v
+  ng -v
+
+Versiones del curso
+  node v12.18.2
+  npm 6.14.5
+  angular 10.0.0
+
+angular instalacion
+  npm install -g @angular/cli
+
+instalacion/actualizacion npm
+  npm install -g npm@
+
+desinstalar angular
+  npm uninstall -g @angular-cli
+  npm cache clean --force
+
+>>>> Seccion 1 "Introduccion"
+<<<< Cap 1 "Instalaciones necesarias"
+<<<< Cap 2 "Hola Mundo"
+  * Crear carpeta HolaMundo
+  * Dentro de esta carpeta abrir consola y ejecutar el siguiente comando para el
+  crear el proyecto
+  $ ng new Holamundo
+  add routing angular  y
+  which stylesheet use?  css
+
+  $ ng serve --o
+
+<<<< Cap 3 "Estructura de Carpetas"
+<<<< Cap 4 "Qué es Angular"
+<<<< Cap 5 "Configuración Bootstrap CDN"
+<<<< Cap 6 "Configuración Bootstrap Localmente"
+<<<< Cap 7 "Configuración Bootstrap NPM"
+
+>>>> Seccion 2 "Databinding"
+<<<< Cap 8 "¿Qué es el Databinding"
+<<<< Cap 9 "Interpolación"
+<<<< Cap 10 "Property Binding"
+<<<< Cap 11 "Event Binding"
+<<<< Cap 12 "Two Way Data Binding"
+
+>>>> Seccion 3 ""
+>>>> Seccion 4 ""
