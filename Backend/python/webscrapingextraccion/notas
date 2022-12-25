@@ -21,23 +21,95 @@ Este curso incluye:
 <<<< Cap 1 "Introduccion"
 <<<< Cap 2 "Inicio del curso!"
 
+links redes sociales
+https://youtube.com/@anormalix
+https://instagram.com/anormalix_oficial/
+https://linkedin.com/in/pedro-javier-vargas
+
 >>>> Seccion 2 "Instalacion de Entorno"
 <<<< Cap 3 "Instalacion de python"
+https://www.python.org/downloads/
+
 <<<< Cap 4 "Instalacion de sublime text 3 en Windows"
+https://www.sublimetext.com/3
+
 <<<< Cap 5 "Configuracion de sublime text 3"
+* Poner Sublime en modo python3
+* Algunos paquetes interesantes
+- All_autocomplete
+- FileIcons
+- Package Control
+- Python 3
+
+-> Tools -> Install Package Control...
+
+Ctrl+Shift+P
+  python3
+  All Autocomplete
 
 >>>> Seccion 3 "HTML basico!"
 <<<< Cap 6 "HTML Tag"
+dentro de un archivo index.html
+  html:5 
+    Estructura completa con emmet
+    <html><head><body>
+    
 <<<< Cap 7 "h1...6"
+  <h1>Hola</h1>
+  <h2>Que</h2>
+  <h3>Tal</h3>
+  <h6>Tal</h6>
+
 <<<< Cap 8 "P"
+  <p>esto es un parrafo</p>
+
 <<<< Cap 9 "Imagen y Video"
+  <img src="./imagen.jpg" width="300">
+  <video controls src="./video.mp4" type="video/mp4" controls></video>
+
 <<<< Cap 10 "A"
+  <a href="google.com" target="_blank"></a>
+
 <<<< Cap 11 "Formularios"
+  <form action="POST">
+    <label for="user">Usuario</label>
+    <input type="text" id="user">
+    <label for="pass">Contrasena</label>
+    <input type="password" id="pass">
+    
+    <select id="" name="genero">
+      <option value="masculino">Maculino</option>
+      <option value="femenino">Femenino</option>
+    </select>
+    <button type="Submit">Enviar</button>
+  </form>
+
 <<<< Cap 12 "Listas"
+  <ol>
+    <li><a href="#">canal youtube</a></li>
+    <li>Promgramacion</li>
+  </ol>
+
+  <ul>
+    <li>Linux</li>
+    <li>Hacking</li>
+  </ul>
+
 <<<< Cap 13 "Clases e IDs"
+  <ol class='info'>
+    <li><a href="#">canal youtube</a></li>
+    <li>Promgramacion</li>
+  </ol>
+  <ul class='info' id='ajusteidunico'>
+    <li>Linux</li>
+    <li>Hacking</li>
+  </ul>
 
 >>>> Seccion 4 "Aprender a usar Python"
 <<<< Cap 14 "?Por que Python"
+Facilidad, Syntasix mas facil, Popularidad
+
+
 <<<< Cap 15 "Introduccion a Python"
 <<<< Cap 16 "Tipo String"
 <<<< Cap 17 "Tipo int"
