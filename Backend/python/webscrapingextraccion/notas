@@ -109,15 +109,76 @@ dentro de un archivo index.html
 <<<< Cap 14 "?Por que Python"
 Facilidad, Syntasix mas facil, Popularidad
 
-
 <<<< Cap 15 "Introduccion a Python"
+crear archivo python 1_helloworld.py
+  print("Hello World!")
+
+Ctrl + b                -> En sublime para ejecutar
+python 1_helloworld.py  -> en terminal para ejecutar
+
+2_fundamentos.py explicacion de sintaxis
+
 <<<< Cap 16 "Tipo String"
+* los strings o cadenas estan encerrados en cadenas
+* algunas funciones de string
+variable[0] -> Se utiliza para acceder a un caracter especifico
+len(variable) -> retorna el tamano del string
+variable.isupper() | variable.islower() -> verifica si el texto esta en mayuscula o en minuscula
+variable.upper() | variable.lower() -> pone el texto en mayuscula o minuscula
+
+python/3_string.py
+
 <<<< Cap 17 "Tipo int"
+* Los entero son tipos de datos que almacenan numeros no decimales
+(no hay problemas con los positivos o negativos)
+
+python/4_int.py
+
 <<<< Cap 18 "Tipo float"
+* para castear la vareable decimal a entero o si solo se quiere cierto numero de decimales se puede usar round(valor,decimales)
+
+python/5_float.py
+
 <<<< Cap 19 "Tipo Booleano"
+* Solo expresan dos valores (True, False)
+* Se ve mucho en comparaciones, cnodicionales, bluces etc
+
+python/6_bool.py
+
 <<<< Cap 20 "Operadores Artimeticos"
+Suma            -> +
+Resta           -> -
+Multiplicacion  -> *
+Exponente       -> **
+Division        -> /
+Divison Entera  -> //
+Modulo          -> %
+
+python/7_operadores_aritmeticos.py
+
 <<<< Cap 21 "Operadores de Asignacion"
+* No significa comparacion
++=
+-=
+*=
+/=
+**=
+//=
+%=
+
+python/8_operadores_asignacion.py
+
+
 <<<< Cap 22 "Operadores de Comparacion"
+igualdad          ==
+Diferente         !=
+Mayor que         >
+Mayor o igual que >=
+Menor que         <
+Menor o igual que <=
+
+python/9_operadores_comparacion.py
+
 <<<< Cap 23 "Operadores Logicos"
 <<<< Cap 24 "Entrada de datos"
 <<<< Cap 25 "If"
