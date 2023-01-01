@@ -344,8 +344,21 @@ python/31_try_except_finally.py
 
 >>>> Seccion 5 "Web Scrapping"
 <<<< Cap 43 "Web Scrapping Offline"
+* Tecnica para realizar extraccion de informacion de sitios web
+  Trataremos de simular la navegacion convencional de un ser humano por el
+  protocolo http
+
+es la web que se usa como ejemplo
+lorem2.com
+
+web_scrapping/1_webscrapper.py
+
 <<<< Cap 44 "Web Scrapping Offline 2"
+web_scrapping/2_webscrapper.py
+
 <<<< Cap 45 "Web Scrapping Offline 3"
+web_scrapping/3_webscrapper.py
+
 <<<< Cap 46 "Web Scrapping y Automatizacion con Selenium"
 
 >>>> Seccion 6 "Lectura de archivos JSON y XML"
