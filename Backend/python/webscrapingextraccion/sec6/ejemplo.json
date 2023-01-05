@@ -1,0 +1,18 @@
+[{
+  "nombre": "Pedro",
+  "apellido": "Vargas",
+  "edad": 24,
+  "pais": "PERU"
+},
+{
+  "nombre": "Jorge",
+  "apellido": "Ramires",
+  "edad": 30,
+  "pais": "ESPANA"
+},
+{
+  "nombre": "Maria",
+  "apellido": "Prado",
+  "edad": 16,
+  "pais": "VENEZUELA"
+}]
