@@ -15,10 +15,207 @@ https://www.udemy.com/user/newman-jesus-mestas-vergel
 
 >>>> Seccion 2 "Introduccion y propiedades"
 <<<< Cap 2 "Introduccion a la proporcionalidad"
+Se dice que dos magnitudes son proporcionales cuando multiplicando o dividiendo
+una de ellas por un numero, la otra queda multiplicando o dividiendo por dicho
+numero
+
+* Lo que ahora una persona al mes es proporcional a lo que ahora diario (True)
+* Lo que gano un comerciante es proporcional a la cantidad de mercancia que vende (True)
+* El consumo de la bateria es proporcional al tiempo de uso (False) "puede variar segun la aplicacion"
+
+30 Dias
+1 -> 10   $
+10 -> 150 $
+
+30%
+x  -> y
+3x -> 3y
+
+Ley
+Rendimientos
+Decrecientes
+ 
+            |Producto |Producto
+# Empleados |Total HB |Marginal HB
+0           |         |
+1           |2000     |
+2           |3000     |1000
+3           |3500     |500
+4           |3800     |300
+5           |3900     |100
+
+al usar regla de tres en el caso anterior rompe la proporcionalidad
+
 <<<< Cap 3 "Magnitudes directas e inversas proporcionalmente"
+
+Ejemplos:
+1) 20 personas consumen 120kg de comida
+2) 25 obreros trabajan en total 80 horas para la construccion de una casa
+3) 10 camisas tiene un costo de 100$
+4) 12 chorrors de agua llenan un tanque en 12 horas
+
+Magnitudes directas proporcionales
+a*2 b*2
+a/2 b/2
+
+Magnitudes inversas proporcionales
+a*2 b/2
+a/5 b*5
+
+1) Las entre mas personas mas comidad consumen '++' "Directamente proporcional"
+2) Entre mas obreros las horas reducen '+-' "Inversamente proporcional"
+3) Entre mas camisas mas costos por las mismas '++' "Directamenete proporcional"
+4) Entre mas chorros de agua en menos tiempo se llena el tanque '+-' "Inversamente proporcional"
+
+Directamente Proporcional -> Regla de tres simple
+Inversamente Proporcional -> Regla de tres inversa
+
 <<<< Cap 4 "Regla de tres simple"
+Es la operacion para hallar el cuarto termino en una proporcion. se le denomina
+regla de tres debido a que tres datos son conocidos y estos se utilizan para
+conocer el cuarto dato.
+
+1) Si 600$ es el total de comprar 12 discos musicales ?Cuanto costaran 18?
+
+a = b
+c = x
+
+b = a
+c = x
+
+600$ = 12d
+18d = x$
+
+12d = 600$
+18d = x$
+
+#######
+Teniendo en cuenta que a y b se movieron de lugar se podria hacer
+#######
+
+(c * a) / b
+(18d * 600$) / 12d
+
+(c / b) * a
+(18d / 12d) * 600$
+
+x = 900$
+
+2) Una llave de agua vierte 25300 lts de agua a un camion citerna al abrirse
+durante 15 dias. ?Cuantos lts vertira si se abre por tan solo 10 dias y medio?
+
+b = c 
+c = x
+
+25300l = 15d
+10.5d = x
+
+15d = 25300l
+10,5d = x
+
+(10,5 / 15) * 25300
+(10,5 * 25300) / 15
+
+x = 17710
+
 <<<< Cap 5 "Regla de tres inversa"
+Es analoga a la regla de tres simple con la diferencia las magnitudes son
+inversamente proporcionales se deben cambiar los datos izquierdos.
+
+1) Se ha planeado que un muro sea construido por 24 obreros en 18 dias; sin
+embargo solo se logro contrar 12 obreros. ?Cuantos dias tardara el
+levantamiento del muro?
+
+24o = 18d
+12o = Xd
+
+12o = 18d
+24d = Xd
+
+a = b
+c = x
+
+c = b
+a = x
+
+#######
+Teniendo en cuenta que a y c se movieron de lugar se podria hacer
+#######
+
+(a * b) / c
+(24d * 18d) / 12o
+
+(c / b) * a
+(24d / 12o) * 18d
+
+x = 36d
+
 <<<< Cap 6 "Regla de tres compuesta"
+Se utiliza cuando se tiene mas de 4 cantidades o datos directos o inversos
+proporcionalmente, se deben intermcabiar los datos directamente proporcionales
+
+>>> Comprar 15 cajas de aceite con 18 galones cuesta 960$ ?Cuanto cuesta 9 cajas
+con 20 galones
+
+Dato X ·  Dato y ·  Dato z ·  Dato n
+________________________________________
+Dato X2 · Dato y2 · Dato z2 · X n2  
+
+
+# z se cambia de lugar por que es directamente proporcional
+    
+    Dato X ·  Dato y ·  Dato z2 ·  Dato n
+x = ________________________________________
+    Dato X2 · Dato y2 · Dato z 
+
+#######
+#######
+15c * 18g 960$
+_______________
+9c * 20g  x$
+
+#######
+Se giran los valores directamente proporcionales
+#######
+
+    9c * 20g 960$
+x = _______________
+    15c * 18g  
+
+172800
+______
+270
+
+(9*20*960)/(15*18)
+x = 640
+
+>>> 8 obreros trabajando 9 horas diarias han hecho 738mtr de obra en 25 dias.
+?Cuantos dias necestian 14 obreros trabajando 8 horas diarias para hacer
+980mtr de la obra?
+
+#######
+#######
+8o * 9h 738m 25d
+_______________
+14o * 8h * 980m Xd
+
+#######
+Se giran los valores inversa y directamente proporcionales
+#######
+
+    8o * 9h 980m 25d
+x = _______________
+    14o * 8h * 738m
+
+    1764000
+x = _______________
+    82656
+
+(8*9*980*25)/(14*8*738)
+1764000/82656
+
+x = 21.34146341463414634146 
+x = 21.3
 
 >>>> Seccion 3 "Ejercicios"
 <<<< Cap 7 "Ejercicio 1"
