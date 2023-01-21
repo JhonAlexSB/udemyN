@@ -27,20 +27,123 @@ Solucion
 
 48*0.08
 x = 3.84
+
 <<<< Cap 9 "Solucion Ejercicio 3"
 {{{
 
+238u -> 27.8 %
+xu -> 100%
+
+27.8 238
+100 
+
+(100*238)/27.8
+(98.2*238)/27.8
+
+100% = 856.11510791366906474820
+100% = 856.1151
+
+98.2% = 840.70503597122302158273
+98.2% = 840.7050
+
+
 <<<< Cap 10 "Solucion Ejercicio 4"
 {{{
+
+1kilogramo = 1000 gramos
+0.4 kilogramos = 400 miligramos
+
+1000g -> 15$
+400g -> x$
+
+(400*2.5)/1000
+(0.4*2.5)/1
+
+x = 1$
+
 <<<< Cap 11 "Solucion Ejercicio 5"
 {{{
+
+1000g = 6$
+xg = 2.9
+
+6$ = 1000g
+2.9$ = xg
+
+(2.9*1000)/6
+
+x = 483.33333333333333333333 gramos
+x = 483.333
+
 <<<< Cap 12 "Solucion Ejercicio 6"
 {{{
+
+13lts = 130km
+7,5lts = xkm
+
+(7.5*130)/13
+
+x = 75 kilometros
+
 <<<< Cap 13 "Solucion Ejercicio 7"
 {{{
+
+3h 8hr 80mts 10d
+5h 6hr 60mts xd
+
+  3h 8h 60 10
+x ___________
+  5h 6h 80 
+
+x = (3*8*60*10)/(5*6*80)
+
+x = 6
+
 <<<< Cap 14 "Solucion Ejercicio 8"
 {{{
+
+3e 45m
+7e xm
+
+7e 45m
+3e xm
+
+x = (3*45)/7
+x = 19.28571428571428571429
+x = 19.2857
+
+1m -> 60s
+0.2857m -> xm
+
+x = (0.2857*60)/1
+x = 17.142
+
+
+x = 19 minutos con 17 segundos
+
 <<<< Cap 15 "Solucion Ejercicio 9"
 {{{
+
+25b = 248$
+xb = 2140$
+
+248$ = 25b
+2140$ = xb
+
+x = (2140*25)/248
+x = 215.72580645161290322581
+x = 215
+
+
 <<<< Cap 16 "Solucion Ejercicio 10"
 {{{
+
+5h = 100km
+xh = 20km
+
+100km = 5h
+20km = xh
+
+x = (100*5)/20
+x = 25h
+
