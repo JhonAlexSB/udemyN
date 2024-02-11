@@ -1,0 +1,177 @@
+Curso:
+https://www.udemy.com/course/curso-flask/
+
+Instructor:
+https://www.udemy.com/user/alex-roel/
+
+Última actualización: 4/2023
+Idioma:               Español
+
+
+Este curso incluye:
+
+>>>> Seccion
+<<<< Capitulo
+.... Recursos
+---- Enlaces
+
+
+>>>> Seccion 1 "Introducción"
+<<<< Cap 1 "Introducción"
+<<<< Cap 2 "¿Cómo hacer el curso?"
+<<<< Cap 3 "¿Cómo hacer preguntas?"
+<<<< Cap 4 "Herramientas de desarrollo"
+.... Recursos
+  https://www.python.org/
+  https://code.visualstudio.com/
+
+>>>> Seccion 2 "Introducción a Flask"
+<<<< Cap 5 "¿Qué es Flask?"
+.... Recursos
+  https://palletsprojects.com/p/flask/
+<<<< Cap 6 "Instalación y configuración"
+.... Recursos
+  https://flask.palletsprojects.com/en/2.2.x/installation/
+<<<< Cap 7 "Hola Mundo con Flask"
+.... Recursos
+  https://flask.palletsprojects.com/en/2.2.x/quickstart/
+<<<< Cap 8 "El depurado en Flask"
+<<<< Cap 9 "Rutas y vistas"
+<<<< Cap 10 "Variables en rutas"
+<<<< Cap 11 "Escape de HTML"
+<<<< Cap 12 "Resumen de la sección - Introducción a Flask"
+
+>>>> Seccion 3 "Plantillas con Jinja2 y HTML"
+<<<< Cap 13 "Introducción a plantillas"
+<<<< Cap 14 "Creación de plantillas"
+<<<< Cap 15 "Uso de variables y bucles"
+<<<< Cap 16 "Uso de herencia de plantillas"
+<<<< Cap 17 "Uso de filtros y funciones"
+<<<< Cap 18 "Cómo enviar datos a las plantillas"
+<<<< Cap 19 "Enlaces y rutas"
+<<<< Cap 20 "Integrando archivos estáticos"
+<<<< Cap 21 "Resumen de la seccion - Plantillas con Jinja2 y HTML"
+
+>>>> Seccion 4 "Manejo de formulario"
+<<<< Cap 22 "Introducción a los formularios"
+<<<< Cap 23 "Crear formularios"
+<<<< Cap 24 "Validación de datos de formularios"
+<<<< Cap 25 "Formulario con WTForms"
+<<<< Cap 26 "Validación de datos con WTForm"
+<<<< Cap 27 "Resumen de la sección - Manejo de formulario"
+
+>>>> Seccion 5 "Estructura de una aplicación - TodoList"
+<<<< Cap 28 "Presentación del proyecto"
+<<<< Cap 29 "Estructura del proyecto"
+<<<< Cap 30 "Configuración de la aplicación"
+<<<< Cap 31 "Blueprint y Vistas"
+<<<< Cap 32 "Plantilla de base e inicio"
+<<<< Cap 33 "Plantilla de login y registrar usuario"
+<<<< Cap 34 "Resumen de la sección - Estructura de una aplicación - TodoList"
+
+>>>> Seccion 6 "Base de datos - Flask-SQLAchemy"
+<<<< Cap 35 "Introducción Flask-SQLAchemy"
+<<<< Cap 36 "Configuración Flask-SQLAlchemy"
+.... Recursos
+  https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/quickstart/
+<<<< Cap 37 "Modelo de Usuario"
+<<<< Cap 38 "Modelo de Todo"
+<<<< Cap 39 "Migración de Modelos"
+<<<< Cap 40 "Flask Shell"
+<<<< Cap 41 "Registrar Usuario"
+<<<< Cap 42 "Mensaje de error"
+<<<< Cap 43 "Resumen de la sección Base de Datos - Flask-SQLAlchemy"
+
+>>>> Seccion 7 "Autenticación de usuarios"
+<<<< Cap 44 "Introducción a autenticación"
+<<<< Cap 45 "Iniciar sesión"
+<<<< Cap 46 "Mantener sesión"
+<<<< Cap 47 "Verificar sesión"
+<<<< Cap 48 "Cerrar sesión"
+<<<< Cap 49 "Requiere autenticación"
+<<<< Cap 50 "Listar Tareas"
+<<<< Cap 51 "Listar Tareas"
+<<<< Cap 52 "Listar Tareas"
+<<<< Cap 53 "Eliminar Tarea"
+<<<< Cap 54 "Resumen de la sección - Autenticación de usuarios"
+
+>>>> Seccion 8 "Crear proyecto  - BLOG-POSTS"
+<<<< Cap 55 "Presentación del proyecto - BLOG-POSTS"
+.... Recursos
+  blog-posts-frontend.zip
+<<<< Cap 56 "Crear proyecto"
+<<<< Cap 57 "Creando las Vistas"
+<<<< Cap 58 "Uniendo Frontend - Flask"
+<<<< Cap 59 "Plantilla de login"
+<<<< Cap 60 "Archivo de configuración"
+<<<< Cap 61 "Conexión a PostgreSQL"
+.... Recursos
+  https://www.postgresql.org/
+  https://www.youtube.com/watch?v=n5Ec9bMouWQ
+<<<< Cap 62 "Creando Modelos"
+<<<< Cap 63 "Autenticación"
+<<<< Cap 64 "Mensaje de error"
+<<<< Cap 65 "Menú de navegación"
+<<<< Cap 66 "Administrar pefil"
+<<<< Cap 67 "Subir Foto"
+<<<< Cap 68 "Error de implementación"
+<<<< Cap 69 "Listar blogs"
+<<<< Cap 70 "Instalar CKEditor"
+.... Recursos
+  https://flask-ckeditor.readthedocs.io/en/latest/
+<<<< Cap 71 "Crear blog"
+<<<< Cap 72 "Editar y eliminar blog"
+<<<< Cap 73 "Vista de publicaciones"
+<<<< Cap 74 "Mostrar blog"
+<<<< Cap 75 "Implementar buscador"
+<<<< Cap 76 "Configuración de idioma local"
+<<<< Cap 77 "Resumen de la sección - Crear Proyecto - BLOG-POSTS"
+
+>>>> Seccion 9 "API-REST con Flask"
+<<<< Cap 78 "Introducción a API-REST"
+<<<< Cap 79 "Creando proyecto - Lista de contactos"
+<<<< Cap 80 "Crear modelo"
+<<<< Cap 81 "Crear rutas"
+<<<< Cap 82 "Listar contactos"
+<<<< Cap 83 "Crear contacto"
+<<<< Cap 84 "Obtener contacto"
+<<<< Cap 85 "Editar contacto"
+<<<< Cap 86 "Eliminar contacto"
+<<<< Cap 87 "Resumen de la sección - API-REST con Flask"
+
+>>>> Seccion 10 "Proyecto Fina - Portafolio"
+<<<< Cap 88 "Presentación del proyecto"
+<<<< Cap 89 "Configuración del proyecto"
+<<<< Cap 90 "Plantilla Base"
+<<<< Cap 91 "Menú de navegación y Inicio"
+.... Recursos
+  img.zip
+<<<< Cap 92 "Sección de Proyectos"
+<<<< Cap 93 "Sección de Contacto"
+<<<< Cap 94 "Sección de Footer"
+<<<< Cap 95 "Plantilla envio de correo"
+<<<< Cap 96 "Mailtrap y Flask-mail"
+.... Recursos
+  https://mailtrap.io/
+  https://pythonhosted.org/Flask-Mail/
+<<<< Cap 97 "Enviado correo"
+<<<< Cap 98 "Resumen de la sección - Proyecto final"
+
+>>>> Seccion 11 "Desplegar Aplicación"
+<<<< Cap 99 "Entorno de producción"
+<<<< Cap 100 "Herramientas nesesarias"
+.... Recursos
+  https://git-scm.com/
+  https://github.com/
+  https://www.pythonanywhere.com/
+<<<< Cap 101 "Archivo de requerimiento"
+<<<< Cap 102 "Crear repositorio"
+<<<< Cap 103 "Proyecto de proeva con PythonAnywhere"
+<<<< Cap 104 "Crear un entorno virtual y clonar"
+<<<< Cap 105 "Desplegar aplicación"
+<<<< Cap 106 "Resumen de la sección - Desplegar aplicación"
+
+>>>> Seccion 12 "Cierre del curso"
+<<<< Cap 107 "Despedida del curso"
+.... Recursos
+  https://github.com/alexroel/curso-flask-udemy
