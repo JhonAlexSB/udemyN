@@ -8,6 +8,10 @@ https://www.udemy.com/user/alex-roel/
 Idioma:               Español
 
 
+se guardaran ejemplos de los capitulos
+  ejemplos/capN
+
+
 Este curso incluye:
 
 >>>> Seccion
@@ -89,11 +93,43 @@ localhost:5000/hello
 $$
 flask --app hello --debug run
 
+URL:
 localhost:5000/hello
 
 <<<< Cap 9 "Rutas y vistas"
+
+ejemplos/cap9
+# Si se repiten las rutas solo tomara la primera vista
+# Se pueden usar diferentes nombre de rutas para acceder a una vista
+
 <<<< Cap 10 "Variables en rutas"
+
+ejemplos/cap10
+
+URL:
+localhost:5000/hello/
+localhost:5000/hello/jhon
+localhost:5000/hello/jhon/25
+
+---- Tipos de parametros aceptados en la vista "string, int, float, path, uuid"
+
 <<<< Cap 11 "Escape de HTML"
+
+
+ejemplos/cap11
+
+--- en el archivo ejemplo se muestra como usar la biblioteca con su funcion
+escape para evitar ataques de inyeccion maliciosa por url
+
+from markupsafe import escape
+escape(code)
+
+URL:
+localhost:5000/codebad/<script>alert("bad")</script>
+localhost:5000/code/<script>alert("bad")</script>
+
+
+
 <<<< Cap 12 "Resumen de la sección - Introducción a Flask"
 
 >>>> Seccion 3 "Plantillas con Jinja2 y HTML"
