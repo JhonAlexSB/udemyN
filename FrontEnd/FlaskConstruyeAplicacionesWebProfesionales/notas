@@ -32,10 +32,65 @@ Este curso incluye:
 <<<< Cap 6 "Instalación y configuración"
 .... Recursos
   https://flask.palletsprojects.com/en/2.2.x/installation/
+
+* se recomienda instalar dependecias para seguridad
+
+-- instalar venv y pip (mac o linux)l
+$$
+sudo apt install 
+python3-venv
+python3-pip
+
+-- crear entorno virtua (mac o linux)l
+$$
+python3 -m venv env
+
+-- "Activar" entorno virtual (mac o linux)
+$$
+. env/bin/activate
+
+-- Listar dependecias de pip (sirve para comprobrar si se activo entorno virtual)
+$$
+pip list  
+
+-- Instalar flask
+$$
+pip install flask
+
+-- "Desactivar" entorno virtual (mac o linux)
+$$
+deactivate
+
 <<<< Cap 7 "Hola Mundo con Flask"
 .... Recursos
   https://flask.palletsprojects.com/en/2.2.x/quickstart/
+
+
+/////////// linea de codigo archivo "hello.py"
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/hello')
+def hello():
+  return 'Hola mundo'
+/////////// linea de codigo
+
+------- Terminal con venv activada
+$$
+flask --app hello run
+
+--- En navegador "puerto que especifique la terminal"
+localhost:5000/hello
+
 <<<< Cap 8 "El depurado en Flask"
+
+--- Activar aplicacion con modo depuracion
+$$
+flask --app hello --debug run
+
+localhost:5000/hello
+
 <<<< Cap 9 "Rutas y vistas"
 <<<< Cap 10 "Variables en rutas"
 <<<< Cap 11 "Escape de HTML"
