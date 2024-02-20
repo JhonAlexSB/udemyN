@@ -135,6 +135,22 @@ localhost:5000/code/<script>alert("bad")</script>
 >>>> Seccion 3 "Plantillas con Jinja2 y HTML"
 <<<< Cap 13 "Introducción a plantillas"
 <<<< Cap 14 "Creación de plantillas"
+
+---- crear carpeta /templates
+---- importar modulo de flask "render_template"
+---- en la vista se pone la ruta de la plantilla
+
+---- en la plantilla para definir valores de variables se usan corchetes
+{{name}}
+
+---- para definir sistemas de control como condicionales se usan corchetes y porcentajes
+{{ % % }}
+
+ejemplos/cap12/cap12
+ejemplos/cap12/templates/index.html
+
+
+
 <<<< Cap 15 "Uso de variables y bucles"
 <<<< Cap 16 "Uso de herencia de plantillas"
 <<<< Cap 17 "Uso de filtros y funciones"
