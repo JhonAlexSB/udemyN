@@ -52,6 +52,7 @@ python3 -m venv env
 -- "Activar" entorno virtual (mac o linux)
 $$
 . env/bin/activate
+source env/bin/activate
 
 -- Listar dependecias de pip (sirve para comprobrar si se activo entorno virtual)
 $$
@@ -140,18 +141,26 @@ localhost:5000/code/<script>alert("bad")</script>
 ---- importar modulo de flask "render_template"
 ---- en la vista se pone la ruta de la plantilla
 
----- en la plantilla para definir valores de variables se usan corchetes
+---- en la plantilla para definir valores de variables se usan dobles corchetes
 {{name}}
 
----- para definir sistemas de control como condicionales se usan corchetes y porcentajes
-{{ % % }}
+---- para definir estructuras de control como condicionales se usa corchetes y porcentajes
+{ % % }
 
-ejemplos/cap12/cap12
-ejemplos/cap12/templates/index.html
+ejemplos/cap14/cap14
+ejemplos/cap14/templates/index.html
 
 
 
 <<<< Cap 15 "Uso de variables y bucles"
+
+---- uso de ciclo for
+---- uso de listas en platillas
+
+ejemplos/cap15/cap15
+ejemplos/cap15/templates/index.html
+
+
 <<<< Cap 16 "Uso de herencia de plantillas"
 <<<< Cap 17 "Uso de filtros y funciones"
 <<<< Cap 18 "Cómo enviar datos a las plantillas"
