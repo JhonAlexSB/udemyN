@@ -99,13 +99,13 @@ localhost:5000/hello
 
 <<<< Cap 9 "Rutas y vistas"
 
-ejemplos/cap9
+ejemplos/cap9.py
 # Si se repiten las rutas solo tomara la primera vista
 # Se pueden usar diferentes nombre de rutas para acceder a una vista
 
 <<<< Cap 10 "Variables en rutas"
 
-ejemplos/cap10
+ejemplos/cap10.py
 
 URL:
 localhost:5000/hello/
@@ -117,7 +117,7 @@ localhost:5000/hello/jhon/25
 <<<< Cap 11 "Escape de HTML"
 
 
-ejemplos/cap11
+ejemplos/cap11.py
 
 --- en el archivo ejemplo se muestra como usar la biblioteca con su funcion
 escape para evitar ataques de inyeccion maliciosa por url
@@ -147,7 +147,7 @@ localhost:5000/code/<script>alert("bad")</script>
 ---- para definir estructuras de control como condicionales se usa corchetes y porcentajes
 { % % }
 
-ejemplos/cap14/cap14
+ejemplos/cap14/cap14.py
 ejemplos/cap14/templates/index.html
 
 
@@ -157,11 +157,30 @@ ejemplos/cap14/templates/index.html
 ---- uso de ciclo for
 ---- uso de listas en platillas
 
-ejemplos/cap15/cap15
+ejemplos/cap15/cap15.py
 ejemplos/cap15/templates/index.html
 
 
 <<<< Cap 16 "Uso de herencia de plantillas"
+
+---- crear archivo para herencia "normalmente se nombra base.html"
+base.html
+
+---- crear bloques de contenido para campos dinamicos en "base.html"
+{% block title%} {% endblock %}
+{% block content%} {% endblock %}
+
+---- para recibir los bloques de contenido en la otra plantilla en "index.html"
+{% extends 'base.html' %}
+{% block title%} Pagina de inicio {% endblock %}
+
+
+ejemplos/cap16/cap16.py
+ejemplos/cap16/templates/index.html
+ejemplos/cap16/templates/base.html
+
+
+
 <<<< Cap 17 "Uso de filtros y funciones"
 <<<< Cap 18 "Cómo enviar datos a las plantillas"
 <<<< Cap 19 "Enlaces y rutas"
