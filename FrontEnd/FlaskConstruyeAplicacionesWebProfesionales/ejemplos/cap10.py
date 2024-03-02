@@ -7,7 +7,9 @@ app = Flask(__name__)
 # float
 # path   | no resive valores como /   "caracteres especiales"
 # uuid
-@app.route('/hello/<string:name>/<int:edad>')
+@app.route('/hello/')
+@app.route('/hello/<string:name>/')
+@app.route('/hello/<string:name>/<int:age>')
 def hello(name = None, age = None):
   if name == None and age == None:
     return f'<h1>Hola mundo</h1>'
