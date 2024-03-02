@@ -7,6 +7,8 @@ https://www.udemy.com/user/alex-roel/
 Última actualización: 4/2023
 Idioma:               Español
 
+extensiones en vscode instalacion con ctrl p, pegar siguiente linea y enter
+ext install wholroyd.jinja
 
 se guardaran ejemplos de los capitulos
   ejemplos/capN
@@ -103,6 +105,16 @@ ejemplos/cap9.py
 # Si se repiten las rutas solo tomara la primera vista
 # Se pueden usar diferentes nombre de rutas para acceder a una vista
 
+
+URL:
+localhost:5000/
+localhost:5000/hello
+
+localhost:5000/index
+
+Consola:
+flask --app cap9 --debug run
+
 <<<< Cap 10 "Variables en rutas"
 
 ejemplos/cap10.py
@@ -111,6 +123,9 @@ URL:
 localhost:5000/hello/
 localhost:5000/hello/jhon
 localhost:5000/hello/jhon/25
+
+Consola:
+flask --app cap10 --debug run
 
 ---- Tipos de parametros aceptados en la vista "string, int, float, path, uuid"
 
@@ -129,7 +144,8 @@ URL:
 localhost:5000/codebad/<script>alert("bad")</script>
 localhost:5000/code/<script>alert("bad")</script>
 
-
+Consola:
+flask --app cap11 --debug run
 
 <<<< Cap 12 "Resumen de la sección - Introducción a Flask"
 
@@ -151,6 +167,12 @@ ejemplos/cap14/cap14.py
 ejemplos/cap14/templates/index.html
 
 
+URL:
+localhost:5000/
+localhost:5000/index
+
+Consola:
+flask --app cap14 --debug run
 
 <<<< Cap 15 "Uso de variables y bucles"
 
@@ -160,6 +182,11 @@ ejemplos/cap14/templates/index.html
 ejemplos/cap15/cap15.py
 ejemplos/cap15/templates/index.html
 
+URL:
+localhost:5000/
+
+Consola:
+flask --app cap15 --debug run
 
 <<<< Cap 16 "Uso de herencia de plantillas"
 
@@ -180,9 +207,40 @@ ejemplos/cap16/templates/index.html
 ejemplos/cap16/templates/base.html
 
 
+URL:
+localhost:5000/index
+
+Consola:
+flask --app cap16 --debug run
 
 <<<< Cap 17 "Uso de filtros y funciones"
 <<<< Cap 18 "Cómo enviar datos a las plantillas"
+
+Cambios en jinja 
+is,    por ==
+None,  por none
+
+Agregar en jinja
+endif, o cualquer otro endNN correspondiente a un cliclo
+
+Borrar  en jinja
+:,     en condicionales que los contengan
+
+ejemplos/cap18/cap18.py
+ejemplos/cap18/templates/hello.html
+ejemplos/cap18/templates/base.html
+
+
+URL:
+localhost:5000/hello
+localhost:5000/hello/hola
+localhost:5000/hello/jhon/25
+localhost:5000/hello/jhon/25/john@117.com
+
+Consola:
+flask --app cap18 --debug run
+
+
 <<<< Cap 19 "Enlaces y rutas"
 <<<< Cap 20 "Integrando archivos estáticos"
 <<<< Cap 21 "Resumen de la seccion - Plantillas con Jinja2 y HTML"
