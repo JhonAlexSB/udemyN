@@ -101,6 +101,7 @@ localhost:5000/hello
 
 <<<< Cap 9 "Rutas y vistas"
 
+Archivos:
 ejemplos/cap9.py
 # Si se repiten las rutas solo tomara la primera vista
 # Se pueden usar diferentes nombre de rutas para acceder a una vista
@@ -117,6 +118,7 @@ flask --app cap9 --debug run
 
 <<<< Cap 10 "Variables en rutas"
 
+Archivos:
 ejemplos/cap10.py
 
 URL:
@@ -132,6 +134,7 @@ flask --app cap10 --debug run
 <<<< Cap 11 "Escape de HTML"
 
 
+Archivos:
 ejemplos/cap11.py
 
 --- en el archivo ejemplo se muestra como usar la biblioteca con su funcion
@@ -163,6 +166,7 @@ flask --app cap11 --debug run
 ---- para definir estructuras de control como condicionales se usa corchetes y porcentajes
 { % % }
 
+Archivos:
 ejemplos/cap14/cap14.py
 ejemplos/cap14/templates/index.html
 
@@ -179,6 +183,7 @@ flask --app cap14 --debug run
 ---- uso de ciclo for
 ---- uso de listas en platillas
 
+Archivos:
 ejemplos/cap15/cap15.py
 ejemplos/cap15/templates/index.html
 
@@ -202,6 +207,7 @@ base.html
 {% block title%} Pagina de inicio {% endblock %}
 
 
+Archivos:
 ejemplos/cap16/cap16.py
 ejemplos/cap16/templates/index.html
 ejemplos/cap16/templates/base.html
@@ -214,6 +220,40 @@ Consola:
 flask --app cap16 --debug run
 
 <<<< Cap 17 "Uso de filtros y funciones"
+
+flask --app hello --debug run
+
+Filtros upper, reverse
+  <p>Hola, {{name | upper}}</p>
+
+  {% for friend in friends | reverse %}
+    <li> {{friend}} </li>
+  {% endfor %}
+
+Funciones: repeat()
+  <p>La fecha de hoy es : {{ date | today }}</p>
+  <p>La frase repetida es : {{ repeat('hola', 3) }}</p>
+
+Filtro de fecha, corregir fecha
+  return date.strftime('%d-%m-%Y')
+
+Uso de decoradores para agregar funciones de manera global
+  app.add_template_filter(today, 'today') # Este se despues de declarar la funcion
+  @app.add_template_global # Este se usa justo una linea antes de la funcion
+
+Archivos:
+ejemplos/cap17/cap17.py
+ejemplos/cap17/templates/index.html
+ejemplos/cap17/templates/base.html
+
+URL:
+localhost:5000/index
+
+Consola:
+flask --app cap17 --debug run
+
+
+
 <<<< Cap 18 "Cómo enviar datos a las plantillas"
 
 Cambios en jinja 
@@ -226,6 +266,7 @@ endif, o cualquer otro endNN correspondiente a un cliclo
 Borrar  en jinja
 :,     en condicionales que los contengan
 
+Archivos:
 ejemplos/cap18/cap18.py
 ejemplos/cap18/templates/hello.html
 ejemplos/cap18/templates/base.html
