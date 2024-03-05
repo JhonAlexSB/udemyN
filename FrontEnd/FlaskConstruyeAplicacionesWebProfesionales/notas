@@ -223,21 +223,21 @@ flask --app cap16 --debug run
 
 flask --app hello --debug run
 
-Filtros upper, reverse
+---- Filtros upper, reverse
   <p>Hola, {{name | upper}}</p>
 
   {% for friend in friends | reverse %}
     <li> {{friend}} </li>
   {% endfor %}
 
-Funciones: repeat()
+---- Funciones: repeat()
   <p>La fecha de hoy es : {{ date | today }}</p>
   <p>La frase repetida es : {{ repeat('hola', 3) }}</p>
 
-Filtro de fecha, corregir fecha
+---- Filtro de fecha, corregir fecha
   return date.strftime('%d-%m-%Y')
 
-Uso de decoradores para agregar funciones de manera global
+---- Uso de decoradores para agregar funciones de manera global
   app.add_template_filter(today, 'today') # Este se despues de declarar la funcion
   @app.add_template_global # Este se usa justo una linea antes de la funcion
 
@@ -256,14 +256,14 @@ flask --app cap17 --debug run
 
 <<<< Cap 18 "Cómo enviar datos a las plantillas"
 
-Cambios en jinja 
+---- Cambios en jinja 
 is,    por ==
 None,  por none
 
-Agregar en jinja
+---- Agregar en jinja
 endif, o cualquer otro endNN correspondiente a un cliclo
 
-Borrar  en jinja
+---- Borrar  en jinja
 :,     en condicionales que los contengan
 
 Archivos:
@@ -283,7 +283,40 @@ flask --app cap18 --debug run
 
 
 <<<< Cap 19 "Enlaces y rutas"
+
+---- Agregar funcion "url_for" para agregar rutas desde flask
+from flask import url_for
+
+
 <<<< Cap 20 "Integrando archivos estáticos"
+
+---- Crear carpeta "static"
+static/
+
+---- Dentro se pueden crear subcarpetas para imagenes, estilos, javascript
+static/css
+static/js
+static/img
+
+---- En archivo "base.html" de jinja se hace lo siguente con "url_for" para invocar archivos estaticos
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+
+---- en el archivo prinicipal se invoca "url_for" con sus otras dependencias si son necesarias
+from flask import  url_for
+
+Archivos:
+ejemplos/cap20/cap20.py
+ejemplos/cap20/templates/index.html
+ejemplos/cap20/templates/base.html
+
+ejemplos/cap20/static/css/main.css
+
+URL:
+http://localhost:5000/
+
+Consola:
+flask --app cap20 --debug run
+
 <<<< Cap 21 "Resumen de la seccion - Plantillas con Jinja2 y HTML"
 
 >>>> Seccion 4 "Manejo de formulario"
