@@ -322,6 +322,25 @@ flask --app cap20 --debug run
 >>>> Seccion 4 "Manejo de formulario"
 <<<< Cap 22 "Introducción a los formularios"
 <<<< Cap 23 "Crear formularios"
+
+---- en el archivo prinicipal se invoca "url_for" con sus otras dependencias si son necesarias
+from flask import request
+
+---- Register usuario # metodo "GET" necesario para renderizar plantilla # metodo "POST" necesario para resivir formulario
+
+templates/auth/register.html
+
+Archivos:
+ejemplos/cap23/cap23.py
+ejemplos/cap23/templates/auth/register.html
+ejemplos/cap23/templates/base.html
+
+URL:
+http://localhost:5000/auth/register
+
+Consola:
+flask --app cap23 --debug run
+
 <<<< Cap 24 "Validación de datos de formularios"
 <<<< Cap 25 "Formulario con WTForms"
 <<<< Cap 26 "Validación de datos con WTForm"
