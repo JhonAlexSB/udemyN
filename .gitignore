@@ -1,3 +1,4 @@
 # Para Carpetas relacionadas con Python
 .evn
 env
+__pycache__
