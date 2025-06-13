@@ -1,0 +1,154 @@
+Curso:
+https://www.udemy.com/course/desarrollo-de-aplicaciones-web-con-javascript-2020
+
+Instructor:
+https://www.udemy.com/user/yirsis-aldebrand-serrano-herrera/
+
+Este curso incluye:
+11.5 hora de vídeo bajo demanda
+4 artículos
+2 recursos descargables
+
+>>>> Seccion
+<<<< Capitulo
+.... Recursos
+---- Enlaces
+++++ Articulo
+
+>>>> Seccion 1 "Introduccion"
+<<<< Cap 1 "Introducción al curso"
+<<<< Cap 2 "Instalaciones"
+<<<< Cap 3 "Herramientas Recomendadas"
+tc39.es/ecma262
+babeljs.io
+
+<<<< Cap 4 "Extensiones Recomendadas"
+
+>>>> Seccion 2 "Proyecto 1: Paleta de colores"
+<<<< Cap 5 "Estructura HTML"
+<<<< Cap 6 "Resetear Estilos"
+<<<< Cap 7 "Hojas de Estilo CSS"
+<<<< Cap 8 "Fonts"
+<<<< Cap 9 "Estilizando Aplicación"
+<<<< Cap 10 "Archivo JS"
+<<<< Cap 11 "Eventos en JS"
+<<<< Cap 12 "Reactividad: Cambiando colores en tiempo real"
+<<<< Cap 13 "Babel"
+<<<< Cap 14 "Favicon"
+
+>>>> Seccion 3 "Proyecto 1: Local Storage"
+<<<< Cap 15 "Introducción a la sección"
+<<<< Cap 16 "Agregando Borde al Texto"
+<<<< Cap 17 "Agregando Información al LocalStorage"
+<<<< Cap 18 "Obtener información de LocalStorage"
+<<<< Cap 19 "Múltiples EventListener's"
+<<<< Cap 20 "Guardando Datos dinámicamente"
+<<<< Cap 21 "Guardar Arreglos en LocalStorage"
+<<<< Cap 22 "Modularidad en Archivos JS"
+<<<< Cap 23 "Traducciones Completas con Babel"
+<<<< Cap 24 "Reto con LocalStorage"
+<<<< Cap 25 "Código del reto"
+.... Recursos
+  https://att-c.udemycdn.com/2021-05-20_13-02-33-39f857c37ac4343664ce9a982f2a22d7/original.zip?response-content-disposition=attachment%3B+filename%3Dproyecto_color_picker.zip&Expires=1749797262&Signature=jaKHRZacltlPCqoA4HHoAGn~2XRG0CsWvEp-n2RHuU83Gw47sZV0YejzVOsj986UwiFy3dMNddQMoW7OhcsPrm-AQTyNqGO8dPZtLxWm7qHBp1OH8LMNAmL46PRf0gsVcgeV98BgwCvSIDfzNCsGaruuR-5y7lWWsmUjRLqvvD1k9uoiau9S6saRnncAh7OZLzVgsDnVw37z3a-q79SM~aOLu3I8PeHL8nQV~qQAP2f5Z-0IYT0qDIlp-julkJDYPt3wVGTz7RLeIutNpaKNHJxoDrR-ZIyuPrLS5WIcAq6L6~rPWkzBdIfcWZub0dsXlsnjTieoeN~STbohezTLNQ__&Key-Pair-Id=K3MG148K9RIRF4
+
+
+>>>> Seccion 4 "Proyecto 2: Reloj Digital"
+<<<< Cap 26 "Estructura HTML"
+<<<< Cap 27 "Capturando Hora Actual"
+<<<< Cap 28 "Intervalos"
+
+>>>> Seccion 5 "Proyecto 3: Editor de codigo en tiempo real"
+<<<< Cap 29 "Estructura HTML"
+<<<< Cap 30 "Estilizando Aplicacion"
+<<<< Cap 31 "Capturando y ejecutando código"
+<<<< Cap 32 "Traduciendo con Babel"
+
+>>>> Seccion 6 "Proyecto 4: Matrix"
+<<<< Cap 33 "Estructura HTML"
+<<<< Cap 34 "Estilizando Aplicación"
+<<<< Cap 35 "Pintando dentro de Canvas"
+<<<< Cap 36 "GEnerar Caracteres"
+<<<< Cap 37 "Pintando Caracteres"
+<<<< Cap 38 "Animando Cascada Matrix"
+<<<< Cap 39 "Traduciendo con Babel"
+
+
+>>>> Seccion 7 "Peticciones HTTP con Javascript"
+<<<< Cap 40 "Introducción a la sección"
+<<<< Cap 41 "JSON Placeholder"
+<<<< Cap 42 "Fetch con Promesas"
+<<<< Cap 43 "Fetch con Async y Await"
+<<<< Cap 44 "Axios con Promesas"
+<<<< Cap 45 "Axios con Async y Await"
+<<<< Cap 46 "Maquetando Información (1/2)"
+<<<< Cap 47 "Maquetando Información (2/2)"
+<<<< Cap 48 "RECOMENDACIONES"
+
+>>>> Seccion 8 "JEST: Pruebas Unitarias"
+<<<< Cap 49 "Introducción a la sección"
+<<<< Cap 50 "Instalaciones"
+<<<< Cap 51 "Introducción Teórica a las Pruebas"
+<<<< Cap 52 "Principio AAA Teórico"
+<<<< Cap 53 "Iniciando Proyectos NPM"
+<<<< Cap 54 "Instalando JEST"
+<<<< Cap 55 "Primeros pasos en JEST"
+<<<< Cap 56 "Mi Primer Prueba (1/2)"
+<<<< Cap 57 "Mi Primer Prueba (2/2)"
+<<<< Cap 58 "ToBe y ToEquals"
+<<<< Cap 59 "Describe's"
+
+>>>> Seccion 9 "JEST: Pruebas Reales"
+<<<< Cap 60 "Cifrados seguros con BCrypt"
+<<<< Cap 61 "Pruebas con IT"
+<<<< Cap 62 "Probando Función de Cifrado"
+
+>>>> Seccion 10 "Despliegue"
+<<<< Cap 63 "Introducción a la sección"
+<<<< Cap 64 "Despliegue en GH Pages"
+<<<< Cap 65 "Registrar Dominio Gratuito"
+<<<< Cap 66 "Custom Domain"
+<<<< Cap 67 "Agregar WWW"
+
+>>>> Seccion 11 "Vite.js y TypeScript"
+<<<< Cap 68 "Creando Proyecto de Vite.js y TypeScript"
+<<<< Cap 69 "Agregar Iconos"
+<<<< Cap 70 "Terminando estructura HTML"
+<<<< Cap 71 "Centrando Elementos"
+<<<< Cap 72 "Diseño de la Card y de Botones"
+<<<< Cap 73 "Diseño del clipboard"
+<<<< Cap 74 "Capturando el primer color"
+<<<< Cap 75 "Capturando el segundo color"
+<<<< Cap 76 "Orientation"
+<<<< Cap 77 "Clase active dinámica"
+<<<< Cap 78 "HTML Datasets"
+<<<< Cap 79 "Terminando Orientaciones"
+<<<< Cap 80 "Copy To Clipboard"
+<<<< Cap 81 "NOTA PARA DESPUES: SWC en lugar de Babel"
+<<<< Cap 82 "Modularizando proyecto"
+<<<< Cap 83 "Parametrizando funciones"
+<<<< Cap 84 "Finalizando proyecto"
+<<<< Cap 85 "Código Fuente"
+.... Recursos
+  https://github.com/YirsisHertz/gradient-generator-js
+
+>>>> Seccion 12 "Deslpliegue"
+<<<< Cap 86 "Despliegue en Netlify con GitHub"
+
+>>>> Seccion 13 "Aplicaciones de escritorio con Electron.js"
+<<<< Cap 87 "Introducción a Electron"
+<<<< Cap 88 "Agregando Electron al proyecto"
+<<<< Cap 89 "Agregando Electron-Vite Plugin"
+<<<< Cap 90 "Permiso CSP para ejecución de Scripts"
+<<<< Cap 91 "DEMOSTRACIÓN: Integrando SWC"
+<<<< Cap 92 "LIMITANTE Y TEMPLATE"
+<<<< Cap 93 "Migrando el proyecto"
+<<<< Cap 94 "Configuración básica de la ventana"
+<<<< Cap 95 "Compilando un EXE de Windows"
+<<<< Cap 96 "Código fuente"
+.... Recursos
+  https://github.com/YirsisHertz/electron-gradient-generator-js
+
+>>>> Seccion 14 "Seccion Final"
+<<<< Cap 97 "Clase Final"
+<<<< Cap 98 "Regalo"
+
